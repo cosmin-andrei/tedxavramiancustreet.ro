@@ -60,12 +60,12 @@ function ImageSlider() {
                     onClick={() => (window.location.href = "https://www.facebook.com/media/set/?set=a.287149584426600&type=3&rdid=wx3N3PEUhpglUexd&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15S9rvM6oF%2F")}
                     variant="gradient"
                     color="white"
-                    className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mb-12"
+                    className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mt-10 mb-10"
                     placeholder=""
                     onPointerEnterCapture={() => {}}
                     onPointerLeaveCapture={() => {}}
                 >
-                    Cumpără bilet
+                    Vezi mai multe
                 </Button>
             </div>
         </div>

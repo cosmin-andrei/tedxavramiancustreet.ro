@@ -17,7 +17,8 @@ const speakers = [
 ];
 
 function Countdown() {
-    const eventDate = new Date("2025-05-24T13:00:00"); // Data și ora evenimentului
+    let eventDate: Date;
+    eventDate = new Date("2025-05-24T13:00:00"); // Data și ora evenimentului
     const [timeLeft, setTimeLeft] = useState({
         luni: 0,
         zile: 0,
@@ -127,7 +128,7 @@ function Hero() {
                                     variant="subtitle1"
                                     color="white"
                                     className="mt-2 text-sm font-medium"
-                                    as="subtitle1"
+                                    as="p"
                                     placeholder=""
                                     onPointerEnterCapture={() => {}}
                                     onPointerLeaveCapture={() => {}}
