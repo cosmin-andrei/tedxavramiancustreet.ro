@@ -53,6 +53,7 @@ export function AboutEvent() {
             business leader looking to harness the power of AI, this conference is
             designed to inspire, educate, and connect.
         </Typography>
+
       <div className="mt-8 w-full grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {EVENT_INFO.map((props, idx) => (
           <AboutCard key={idx} {...props} />
