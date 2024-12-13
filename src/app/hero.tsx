@@ -125,7 +125,7 @@ function Hero() {
                                     />
                                 </a>
                                 <Typography
-                                    variant="subtitle1"
+                                    variant="p"
                                     color="white"
                                     className="mt-2 text-sm font-medium"
                                     as="p"
