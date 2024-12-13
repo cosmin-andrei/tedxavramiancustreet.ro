@@ -47,13 +47,31 @@ export function EventContent() {
                 onPointerEnterCapture={() => {}}
                 onPointerLeaveCapture={() => {}}
             >
-              <Tab value="Day1" className="font-medium">
+              <Tab
+                  value="Day1"
+                  className="font-medium"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+              >
                 Day 1
               </Tab>
-              <Tab value="Day2" className="font-medium">
+              <Tab
+                  value="Day2"
+                  className="font-medium"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+              >
                 Day 2
               </Tab>
-              <Tab value="Day3" className="font-medium">
+              <Tab
+                  value="Day3"
+                  className="font-medium"
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+              >
                 Day 3
               </Tab>
             </TabsHeader>
