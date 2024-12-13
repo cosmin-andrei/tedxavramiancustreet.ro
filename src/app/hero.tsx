@@ -124,7 +124,7 @@ function Hero() {
                                         className="mx-auto h-24 w-24 rounded-full shadow-lg hover:scale-105 transition-transform"
                                     />
                                 </a>
-                                <<Typography
+                                <Typography
                                     variant="paragraph"
                                     color="white"
                                     className="mt-2 text-sm font-medium"
