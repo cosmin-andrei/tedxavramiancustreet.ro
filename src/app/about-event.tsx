@@ -2,7 +2,7 @@
 
 import React from "react";
 import Slider from "react-slick";
-import { Typography } from "@material-tailwind/react";
+import {Button, Typography} from "@material-tailwind/react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -32,8 +32,12 @@ function ImageSlider() {
         <div className="bg-black py-10">
             <div className="container mx-auto text-center">
                 <Typography
-                    variant="h5"
+                    variant="h3"
                     className="text-white font-bold mb-6"
+                    as="h3"
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
                 >
                     2024 - ediția dedicată inovației în educație
                 </Typography>
@@ -52,9 +56,17 @@ function ImageSlider() {
                     </Slider>
                 </div>
 
-                <button className="mt-8 bg-white text-black py-2 px-4 rounded shadow-md hover:shadow-lg">
-                    Vezi mai multe
-                </button>
+                <Button
+                    onClick={() => (window.location.href = "https://www.facebook.com/media/set/?set=a.287149584426600&type=3&rdid=wx3N3PEUhpglUexd&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15S9rvM6oF%2F")}
+                    variant="gradient"
+                    color="white"
+                    className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mb-12"
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
+                >
+                    Cumpără bilet
+                </Button>
             </div>
         </div>
     );
@@ -84,6 +96,9 @@ export function AboutEvent() {
                         variant="h3"
                         className="font-bold text-black"
                         as="h3"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
                     >
                         I Love Failure (ILF) 2024 is about innovation and creativity...
                     </Typography>
@@ -91,6 +106,9 @@ export function AboutEvent() {
                         variant="lead"
                         className="text-gray-700"
                         as="p"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
                     >
                         At its heart, ILF 2024 is a love letter to all the setbacks,
                         missteps, and challenges that have defined our lives. It’s an
@@ -99,24 +117,6 @@ export function AboutEvent() {
                         not just anecdotes; they are heart-wrenching and inspiring
                         narratives of individuals who’ve turned their failures into
                         beautiful stories of resilience and success.
-                    </Typography>
-                    <Typography
-                        variant="paragraph"
-                        className="italic text-gray-600"
-                        as="p"
-                    >
-                        “There is no innovation and creativity without failure. Period.”
-                        – Brene Brown
-                    </Typography>
-                    <Typography
-                        variant="lead"
-                        className="text-gray-700"
-                        as="p"
-                    >
-                        At I Love Failure Innovation, you will find 2 days in which very
-                        diverse speakers from top entrepreneurs, investors, influencers to
-                        high-performing athletes and artists, will deliver short powerful
-                        speeches about their failures & lessons learned.
                     </Typography>
                 </div>
             </section>
