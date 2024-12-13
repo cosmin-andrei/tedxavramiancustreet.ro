@@ -28,9 +28,12 @@ function NavItem({ children, href }: NavItemProps) {
         <Typography
             as="a"
             href={href || "#"}
-            target={href ? "_blank" : "_self"}
+            target={"_self"}
             variant="paragraph"
             className="flex items-center gap-2 font-medium rounded-lg px-2 py-1 transition-all duration-300 hover:border hover:border-gray-300"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
         >
           {children}
         </Typography>
@@ -129,8 +132,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
-            <a href="../app/participa.tsx" target="_blank">
+            <a>
               <Button
+                  onClick={() => (window.location.href = "/participa")}
                   color="red"
                   className="rounded-lg transition-colors duration-300 hover:bg-darkred"
                   placeholder=""
@@ -174,8 +178,9 @@ export function Navbar() {
               ))}
             </ul>
             <div className="mt-6 flex items-center gap-4">
-              <a href="../app/participa.tsx" target="_blank">
+              <a>
                 <Button
+                    onClick={() => (window.location.href = "/participa")}
                     color="red"
                     className="rounded-lg transition-colors duration-300 hover:bg-darkred"
                     placeholder=""
