@@ -28,6 +28,9 @@ function NavItem({ children, href }: NavItemProps) {
             target={href ? "_blank" : "_self"}
             variant="paragraph"
             className="flex items-center gap-2 font-medium"
+            placeholder=""
+            onPointerEnterCapture={() => {}}
+            onPointerLeaveCapture={() => {}}
         >
           {children}
         </Typography>
@@ -93,6 +96,9 @@ export function Navbar() {
           <Typography
               color={isScrolling ? "blue-gray" : "white"}
               className="text-lg font-bold"
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
           >
             Material Tailwind
           </Typography>
