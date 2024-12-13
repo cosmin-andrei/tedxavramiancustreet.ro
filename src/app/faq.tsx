@@ -34,10 +34,21 @@ export function Faq() {
     <section className="py-8 px-8 lg:py-20">
       <div className="container mx-auto">
         <div className="text-center">
-          <Typography variant="h1" color="blue-gray" className="mb-4">
+          <Typography variant="h1" color="blue-gray" className="mb-4"
+                      as="h1"
+                      textGradient={false}
+                      placeholder=""
+                      onPointerEnterCapture={() => {}}
+                      onPointerLeaveCapture={() => {}}>
             Frequently asked questions
           </Typography>
           <Typography
+              as="p"
+              color="gray"
+              textGradient={false}
+              placeholder=""
+              onPointerEnterCapture={() => {}}
+              onPointerLeaveCapture={() => {}}
             variant="lead"
             className="mx-auto mb-24 lg:w-3/5 !text-gray-500"
           >
@@ -49,23 +60,31 @@ export function Faq() {
 
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
-            <Accordion
-              key={key}
-              open={open === key + 1}
-              onClick={() => handleOpen(key + 1)}
-            >
-              <AccordionHeader className="text-left text-gray-900">
-                {title}
-              </AccordionHeader>
-              <AccordionBody>
-                <Typography
-                  color="blue-gray"
-                  className="font-normal text-gray-500"
+              <Accordion
+                  key={key}
+                  open={open === key + 1}
+                  onClick={() => handleOpen(key + 1)}
+                  placeholder=""
+                  onPointerEnterCapture={() => {}}
+                  onPointerLeaveCapture={() => {}}
+              >
+                <AccordionHeader
+                    className="text-left text-gray-900"
+                    placeholder=""
+                    onPointerEnterCapture={() => {}}
+                    onPointerLeaveCapture={() => {}}
                 >
-                  {desc}
-                </Typography>
-              </AccordionBody>
-            </Accordion>
+                  {title}
+                </AccordionHeader>
+                <AccordionBody>
+                  <Typography
+                      color="blue-gray"
+                      className="font-normal text-gray-500"
+                  >
+                    {desc}
+                  </Typography>
+                </AccordionBody>
+              </Accordion>
           ))}
         </div>
       </div>
