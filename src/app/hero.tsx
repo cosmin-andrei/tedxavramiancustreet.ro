@@ -1,19 +1,19 @@
 "use client";
 
-import { Button, Typography } from "@material-tailwind/react";
-import React, { useState, useEffect } from "react";
+import {Button, Typography} from "@material-tailwind/react";
+import React, {useState, useEffect} from "react";
 
 const speakers = [
-    { name: "Ana Morodan", image: "/image/ana-morodan.png", link: "/speaker/ana-morodan" },
-    { name: "Sebastian Dobrincu", image: "/image/sebastian-dobrincu.png", link: "/speaker/sebastian-dobrincu" },
-    { name: "George Buhnici", image: "/image/george-buhnici.png", link: "/speaker/george-buhnici" },
-    { name: "Virgil Ianțu", image: "/image/virgil-iantu.png", link: "/speaker/virgil-iantu" },
-    { name: "Horia Tecău", image: "/image/horia-tecau.png", link: "/speaker/horia-tecau" },
-    { name: "Mircea Căpățînă", image: "/image/mircea-capatina.png", link: "/speaker/mircea-capatina" },
-    { name: "Andreea Roșca", image: "/image/andreea-rosca.png", link: "/speaker/andreea-rosca" },
-    { name: "Paul Olteanu", image: "/image/paul-olteanu.png", link: "/speaker/paul-olteanu" },
-    { name: "Dan Frînculescu", image: "/image/dan-frinculescu.png", link: "/speaker/dan-frinculescu" },
-    { name: "Mirela Retegan", image: "/image/mirela-retegan.png", link: "/speaker/mirela-retegan" },
+    {name: "Ana Morodan", image: "/image/ana-morodan.png", link: "/speaker/ana-morodan"},
+    {name: "Sebastian Dobrincu", image: "/image/sebastian-dobrincu.png", link: "/speaker/sebastian-dobrincu"},
+    {name: "George Buhnici", image: "/image/george-buhnici.png", link: "/speaker/george-buhnici"},
+    {name: "Virgil Ianțu", image: "/image/virgil-iantu.png", link: "/speaker/virgil-iantu"},
+    {name: "Horia Tecău", image: "/image/horia-tecau.png", link: "/speaker/horia-tecau"},
+    {name: "Mircea Căpățînă", image: "/image/mircea-capatina.png", link: "/speaker/mircea-capatina"},
+    {name: "Andreea Roșca", image: "/image/andreea-rosca.png", link: "/speaker/andreea-rosca"},
+    {name: "Paul Olteanu", image: "/image/paul-olteanu.png", link: "/speaker/paul-olteanu"},
+    {name: "Dan Frînculescu", image: "/image/dan-frinculescu.png", link: "/speaker/dan-frinculescu"},
+    {name: "Mirela Retegan", image: "/image/mirela-retegan.png", link: "/speaker/mirela-retegan"},
 ];
 
 function Countdown() {
@@ -38,7 +38,7 @@ function Countdown() {
                 const minute = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 const secunde = Math.floor((diff % (1000 * 60)) / 1000);
 
-                setTimeLeft({ luni, zile, ore, minute, secunde });
+                setTimeLeft({luni, zile, ore, minute, secunde});
             } else {
                 clearInterval(interval);
             }
@@ -49,7 +49,13 @@ function Countdown() {
 
     return (
         <div className="py-12 bg-black text-white text-center">
-            <Typography variant="h5" className="mb-4 font-bold">
+            <Typography variant="h5" className="mb-4 font-bold"
+                        as="h5"
+                        placeholder=""
+                        onPointerEnterCapture={() => {
+                        }}
+                        onPointerLeaveCapture={() => {
+                        }}>
                 Au mai rămas
             </Typography>
             <div className="flex justify-center gap-4">
@@ -71,7 +77,7 @@ function Hero() {
     return (
         <div className="relative min-h-[130vh] w-full bg-[url('/image/event.jpg')] bg-cover bg-no-repeat">
             {/* Overlay */}
-            <div className="absolute inset-0 h-full w-full bg-black/70" />
+            <div className="absolute inset-0 h-full w-full bg-black/70"/>
 
             {/* Content */}
             <div className="grid min-h-[130vh] px-8 pt-32">
@@ -81,6 +87,12 @@ function Hero() {
                         variant="h1"
                         color="white"
                         className="mb-4 text-4xl font-bold lg:text-5xl"
+                        as="h1"
+                        placeholder=""
+                        onPointerEnterCapture={() => {
+                        }}
+                        onPointerLeaveCapture={() => {
+                        }}
                     >
                         Life Changing Decisions
                     </Typography>
@@ -90,6 +102,12 @@ function Hero() {
                         variant="h4"
                         color="white"
                         className="mb-8 text-lg lg:text-xl"
+                        as="h4"
+                        placeholder=""
+                        onPointerEnterCapture={() => {
+                        }}
+                        onPointerLeaveCapture={() => {
+                        }}
                     >
                         24 mai 2025 @ Cluj-Napoca
                     </Typography>
@@ -109,6 +127,10 @@ function Hero() {
                                     variant="subtitle1"
                                     color="white"
                                     className="mt-2 text-sm font-medium"
+                                    as="subtitle1"
+                                    placeholder=""
+                                    onPointerEnterCapture={() => {}}
+                                    onPointerLeaveCapture={() => {}}
                                 >
                                     {speaker.name}
                                 </Typography>
@@ -123,8 +145,10 @@ function Hero() {
                         color="white"
                         className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mb-12"
                         placeholder=""
-                        onPointerEnterCapture={() => {}}
-                        onPointerLeaveCapture={() => {}}
+                        onPointerEnterCapture={() => {
+                        }}
+                        onPointerLeaveCapture={() => {
+                        }}
                     >
                         Cumpără bilet
                     </Button>
@@ -137,8 +161,8 @@ function Hero() {
 export default function EventPage() {
     return (
         <>
-            <Hero />
-            <Countdown />
+            <Hero/>
+            <Countdown/>
         </>
     );
 }
