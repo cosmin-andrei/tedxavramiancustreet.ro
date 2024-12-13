@@ -6,7 +6,7 @@ import {
   CardBody,
   Avatar,
 } from "@material-tailwind/react";
-
+import React, { Suspense } from "react";
 interface EventContentCardProps {
   title: string;
   des: string;

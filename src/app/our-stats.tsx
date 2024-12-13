@@ -2,7 +2,7 @@
 
 import { Typography } from "@material-tailwind/react";
 import StatsCard from "@/components/stats-card";
-
+import React, { Suspense } from "react";
 const STATS = [
   {
     count: "1,500+",

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { Typography, Accordion, AccordionHeader, AccordionBody } from "@material-tailwind/react";
 
 const FAQS = [

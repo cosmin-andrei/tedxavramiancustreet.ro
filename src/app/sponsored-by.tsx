@@ -1,5 +1,5 @@
 "use client";
-
+import React, { Suspense } from "react";
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 

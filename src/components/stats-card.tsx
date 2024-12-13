@@ -1,5 +1,5 @@
 import { Typography, Card } from "@material-tailwind/react";
-
+import React, { Suspense } from "react";
 interface StatsCardProps {
     count: string;
     title: string;

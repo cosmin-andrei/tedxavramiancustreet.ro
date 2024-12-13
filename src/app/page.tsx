@@ -1,6 +1,6 @@
 // components
-import { Navbar, Footer } from "@/components";
-
+import {Navbar, Footer} from "@/components";
+import React, {Suspense} from "react";
 // sections
 import Hero from "./hero";
 import SponsoredBy from "./sponsored-by";
@@ -10,16 +10,16 @@ import EventContent from "./event-content";
 import Faq from "./faq";
 
 export default function Portfolio() {
-  return (
-    <>
-      <Navbar />
-      <Hero />
-      <SponsoredBy />
-      <AboutEvent />
-      <OurStats />
-      <EventContent />
-      <Faq />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Navbar/>
+            <Hero/>
+            <AboutEvent/>
+            <SponsoredBy/>
+            <OurStats/>
+            <EventContent/>
+            <Faq/>
+            <Footer/>
+        </>
+    );
 }

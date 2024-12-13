@@ -10,9 +10,12 @@ import {
   RectangleStackIcon,
   UserCircleIcon,
   CommandLineIcon,
+  BuildingOfficeIcon,
+  ShoppingBagIcon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
+import {HeartIcon} from "@heroicons/react/20/solid";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -27,10 +30,7 @@ function NavItem({ children, href }: NavItemProps) {
             href={href || "#"}
             target={href ? "_blank" : "_self"}
             variant="paragraph"
-            className="flex items-center gap-2 font-medium"
-            placeholder=""
-            onPointerEnterCapture={() => {}}
-            onPointerLeaveCapture={() => {}}
+            className="flex items-center gap-2 font-medium rounded-lg px-2 py-1 transition-all duration-300 hover:border hover:border-gray-300"
         >
           {children}
         </Typography>
@@ -39,18 +39,30 @@ function NavItem({ children, href }: NavItemProps) {
 }
 
 const NAV_MENU = [
+  // {
+  //   name: "Speakeri",
+  //   icon: UserCircleIcon,
+  //   href: "../app/speakeri.tsx",
+  // },
   {
-    name: "Page",
+    name: "Corporate",
+    icon: BuildingOfficeIcon,
+    href: "../app/corporate.tsx",
+  },
+  {
+    name: "Merch",
+    icon: ShoppingBagIcon,
+    href: "../app/merch.tsx",
+  },
+  {
+    name: "Parteneri",
+    icon: HeartIcon,
+    href: "#parteneri",
+  },
+  {
+    name: "Despre noi",
     icon: RectangleStackIcon,
-  },
-  {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Docs",
-    icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
+    href: "../app/despre.tsx",
   },
 ];
 
@@ -87,21 +99,23 @@ export function Navbar() {
           fullWidth
           blurred={false}
           color={isScrolling ? "white" : "transparent"}
-          className="fixed top-0 z-50 border-0"
+          className={`fixed top-0 z-50 border-0 transition-all duration-300 ${
+              isScrolling ? "shadow-lg" : ""
+          }`}
           placeholder=""
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
       >
         <div className="container mx-auto flex items-center justify-between">
-          <Typography
-              color={isScrolling ? "blue-gray" : "white"}
-              className="text-lg font-bold"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-          >
-            Material Tailwind
-          </Typography>
+          {/* Logo */}
+          <a href="/">
+            <img
+                src={isScrolling ? "/logos/logo-black.png" : "/logos/logo-white.png"}
+                alt="Logo"
+                className="h-10 transition-all duration-300"
+            />
+          </a>
+          {/* Menu Items */}
           <ul
               className={`ml-10 hidden items-center gap-6 lg:flex ${
                   isScrolling ? "text-gray-900" : "text-white"
@@ -115,26 +129,21 @@ export function Navbar() {
             ))}
           </ul>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button
-                color={isScrolling ? "gray" : "white"}
-                variant="text"
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-            >
-              Log in
-            </Button>
-            <a href="https://www.material-tailwind.com/blocks" target="_blank">
+            <a href="../app/participa.tsx" target="_blank">
               <Button
-                  color={isScrolling ? "gray" : "white"}
+                  color="red"
+                  className="rounded-lg transition-colors duration-300 hover:bg-darkred"
                   placeholder=""
                   onPointerEnterCapture={() => {}}
                   onPointerLeaveCapture={() => {}}
               >
-                blocks
+                Participă acum
               </Button>
             </a>
           </div>
+
+
+          {/* Mobile Menu Icon */}
           <IconButton
               variant="text"
               color={isScrolling ? "gray" : "white"}
@@ -151,6 +160,9 @@ export function Navbar() {
             )}
           </IconButton>
         </div>
+
+
+        {/* Mobile Menu */}
         <Collapse open={open}>
           <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
             <ul className="flex flex-col gap-4 text-gray-900">
@@ -162,22 +174,15 @@ export function Navbar() {
               ))}
             </ul>
             <div className="mt-6 flex items-center gap-4">
-              <Button
-                  variant="text"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-              >
-                Log in
-              </Button>
-              <a href="https://www.materila-tailwind.com/blocks" target="_blank">
+              <a href="../app/participa.tsx" target="_blank">
                 <Button
-                    color="gray"
+                    color="red"
+                    className="rounded-lg transition-colors duration-300 hover:bg-darkred"
                     placeholder=""
                     onPointerEnterCapture={() => {}}
                     onPointerLeaveCapture={() => {}}
                 >
-                  blocks
+                  Participă acum
                 </Button>
               </a>
             </div>

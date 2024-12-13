@@ -4,7 +4,7 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
-
+import React, { Suspense } from "react";
 interface AboutCardProp {
   title: string;
   subTitle: string;
