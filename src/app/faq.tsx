@@ -78,6 +78,11 @@ export function Faq() {
                 </AccordionHeader>
                 <AccordionBody>
                   <Typography
+                      as="p"
+                      textGradient={false}
+                      placeholder=""
+                      onPointerEnterCapture={() => {}}
+                      onPointerLeaveCapture={() => {}}
                       color="blue-gray"
                       className="font-normal text-gray-500"
                   >
