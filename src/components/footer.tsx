@@ -1,134 +1,69 @@
-import { Typography, Button, IconButton } from "@material-tailwind/react";
-import React, { Suspense } from "react";
+import { Typography } from "@material-tailwind/react";
+import React from "react";
+
 const CURRENT_YEAR = new Date().getFullYear();
-const LINKS = ["Company", "About Us", "Team", "Products", "Blog"];
+const LINKS = ["Confidențialitate", "Termeni", "Contact"];
 
 export function Footer() {
   return (
-      <footer className="pb-5 p-10 md:pt-10">
-        <div className="container flex flex-col mx-auto">
-          <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5 ">
-            <Typography
-                className="text-2xl md:text-3xl text-center font-bold "
-                color="white"
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-            >
-              Join now and get 30% OFF!
-            </Typography>
-            <Typography
-                color="white"
-                className=" md:w-7/12 text-center my-3 !text-base"
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-            >
-              Don&apos;t miss out on this exclusive offer that will end soon.
-            </Typography>
-            <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
-              <Button
-                  color="white"
-                  size="md"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-              >
-                buy ticket
-              </Button>
+      <footer className="bg-black text-white py-5 relative">
+        {/* Litigation Images Section */}
+        <div className="flex justify-center gap-4 pb-4">
+          <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO" target="_blank" rel="noopener noreferrer">
+            <img
+                src="/logos/SOL.png"
+                alt="Soluționarea online a litigiilor"
+                className="h-10"
+            />
+          </a>
+          <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener noreferrer">
+            <img
+                src="/logos/SAL.png"
+                alt="Soluționarea alternativă a litigiilor"
+                className="h-10"
+            />
+          </a>
+        </div>
+
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between border-t border-white/10 pt-4">
+          {/* Logo and Links Section */}
+          <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
+            <div className="flex items-center space-x-2">
+              <img
+                  src="/logos/logo-white.png"
+                  alt="Logo"
+                  className="h-10"
+              />
             </div>
-          </div>
-          <div className="flex flex-col md:flex-row items-center !justify-between">
-            <Typography
-                as="a"
-                href="https://www.material-tailwind.com"
-                target="_blank"
-                variant="h6"
-                className="text-gray-900"
-                placeholder=""
-                onPointerEnterCapture={() => {}}
-                onPointerLeaveCapture={() => {}}
-            >
-              Material Tailwind
-            </Typography>
-            <ul className="flex justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
+            <ul className="flex flex-wrap gap-4">
               {LINKS.map((link, index) => (
                   <li key={index}>
                     <Typography
                         as="a"
                         href="#"
                         variant="small"
-                        color="white"
-                        className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
-                        placeholder=""
-                        onPointerEnterCapture={() => {}}
-                        onPointerLeaveCapture={() => {}}
+                        className="font-normal text-white hover:text-gray-300 transition-colors"
                     >
                       {link}
                     </Typography>
                   </li>
               ))}
             </ul>
-            <div className="flex w-fit justify-center gap-2">
-              <IconButton
-                  size="sm"
-                  color="gray"
-                  variant="text"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-              >
-                <i className="fa-brands fa-twitter text-lg" />
-              </IconButton>
-              <IconButton
-                  size="sm"
-                  color="gray"
-                  variant="text"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-              >
-                <i className="fa-brands fa-youtube text-lg" />
-              </IconButton>
-              <IconButton
-                  size="sm"
-                  color="gray"
-                  variant="text"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-              >
-                <i className="fa-brands fa-instagram text-lg" />
-              </IconButton>
-              <IconButton
-                  size="sm"
-                  color="gray"
-                  variant="text"
-                  placeholder=""
-                  onPointerEnterCapture={() => {}}
-                  onPointerLeaveCapture={() => {}}
-              >
-                <i className="fa-brands fa-github text-lg" />
-              </IconButton>
-            </div>
           </div>
-          <Typography
-              color="blue-gray"
-              className="text-center mt-12 font-normal !text-gray-700"
-              placeholder=""
-              onPointerEnterCapture={() => {}}
-              onPointerLeaveCapture={() => {}}
-          >
-            &copy; {CURRENT_YEAR} Made with{" "}
-            <a href="https://www.material-tailwind.com" target="_blank">
-              Material Tailwind
-            </a>{" "}
-            by{" "}
-            <a href="https://www.creative-tim.com" target="_blank">
-              Creative Tim
+
+          {/* Partners Section */}
+          <div className="flex items-center space-x-2 mt-4 md:mt-0">
+            <Typography variant="small" className="text-white font-semibold text-sm">
+              Partener digitalizare
+            </Typography>
+            <a href="https://web365.ro" target="_blank" rel="noopener noreferrer">
+              <img
+                  src="/logos/web365-logo.png"
+                  alt="Partener Digitalizare"
+                  className="h-6"
+              />
             </a>
-            .
-          </Typography>
+          </div>
         </div>
       </footer>
   );

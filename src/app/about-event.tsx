@@ -100,7 +100,7 @@ export function AboutEvent() {
                         onPointerEnterCapture={() => {}}
                         onPointerLeaveCapture={() => {}}
                     >
-                        I Love Failure (ILF) 2024 is about innovation and creativity...
+                        TEDxAvram Iancu Street 2025 este despre decizii care îți schimbă viața...
                     </Typography>
                     <Typography
                         variant="lead"
@@ -110,13 +110,8 @@ export function AboutEvent() {
                         onPointerEnterCapture={() => {}}
                         onPointerLeaveCapture={() => {}}
                     >
-                        At its heart, ILF 2024 is a love letter to all the setbacks,
-                        missteps, and challenges that have defined our lives. It’s an
-                        emotional rollercoaster that guides you through the valleys of
-                        despair to the peaks of innovation. The stories shared here are
-                        not just anecdotes; they are heart-wrenching and inspiring
-                        narratives of individuals who’ve turned their failures into
-                        beautiful stories of resilience and success.
+                        Explorează cum alegerile curajoase și momentele de răscruce modelează destine,
+                        într-o ediție TEDx dedicată celor care îndrăznesc să schimbe cursul vieții lor.
                     </Typography>
                 </div>
             </section>

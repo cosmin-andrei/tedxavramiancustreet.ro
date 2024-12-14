@@ -55,7 +55,7 @@ const NAV_MENU = [
   {
     name: "Merch",
     icon: ShoppingBagIcon,
-    href: "../app/merch.tsx",
+    href: "merch",
   },
   {
     name: "Parteneri",
@@ -65,7 +65,7 @@ const NAV_MENU = [
   {
     name: "Despre noi",
     icon: UserCircleIcon,
-    href: "../app/despre.tsx",
+    href: "/despre",
   },
 ];
 

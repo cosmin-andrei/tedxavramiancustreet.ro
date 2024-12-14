@@ -13,7 +13,7 @@ const speakers = [
     {name: "Andreea Roșca", image: "/image/andreea-rosca.png", link: "/speaker/andreea-rosca"},
     {name: "Paul Olteanu", image: "/image/paul-olteanu.png", link: "/speaker/paul-olteanu"},
     {name: "Dan Frînculescu", image: "/image/dan-frinculescu.png", link: "/speaker/dan-frinculescu"},
-    {name: "Mirela Retegan", image: "/image/mirela-retegan.png", link: "/speaker/mirela-retegan"},
+    {name: "Raly Țonea", image: "/image/editia2025/team/ralytonea.png", link: "/editia2025/raly-tonea"},
 ];
 
 function Countdown() {

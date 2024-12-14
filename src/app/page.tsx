@@ -7,7 +7,6 @@ import Parteners from "./parteners";
 import AboutEvent from "./about-event";
 import Tedtalks from "./tedtalks";
 import EventContent from "./event-content";
-import Faq from "./faq";
 
 export default function Portfolio() {
     return (
@@ -16,9 +15,8 @@ export default function Portfolio() {
             <Hero/>
             <AboutEvent/>
             <Tedtalks/>
+            <EventContent/>
             <Parteners/>
-            {/*<EventContent/>*/}
-            {/*<Faq/>*/}
             <Footer/>
         </>
     );
