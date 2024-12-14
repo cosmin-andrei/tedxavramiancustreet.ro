@@ -3,9 +3,9 @@ import {Navbar, Footer} from "@/components";
 import React, {Suspense} from "react";
 // sections
 import Hero from "./hero";
-import SponsoredBy from "./sponsored-by";
+import Parteners from "./parteners";
 import AboutEvent from "./about-event";
-import OurStats from "./our-stats";
+import Tedtalks from "./tedtalks";
 import EventContent from "./event-content";
 import Faq from "./faq";
 
@@ -15,10 +15,10 @@ export default function Portfolio() {
             <Navbar/>
             <Hero/>
             <AboutEvent/>
-            <SponsoredBy/>
-            <OurStats/>
-            <EventContent/>
-            <Faq/>
+            <Tedtalks/>
+            <Parteners/>
+            {/*<EventContent/>*/}
+            {/*<Faq/>*/}
             <Footer/>
         </>
     );

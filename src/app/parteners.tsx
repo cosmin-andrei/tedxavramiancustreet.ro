@@ -12,7 +12,7 @@ const SPONSORS = [
   "netflix",
 ];
 
-export function SponsoredBy() {
+export function Parteners() {
   return (
       <section className="py-8 px-8 lg:py-20">
         <div className="container mx-auto text-center">
@@ -43,4 +43,4 @@ export function SponsoredBy() {
   );
 }
 
-export default SponsoredBy;
+export default Parteners;
