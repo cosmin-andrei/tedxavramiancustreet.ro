@@ -43,6 +43,11 @@ export function Footer() {
                         href="#"
                         variant="small"
                         className="font-normal text-white hover:text-gray-300 transition-colors"
+                        placeholder=""
+                        onPointerEnterCapture={() => {
+                        }}
+                        onPointerLeaveCapture={() => {
+                        }}
                     >
                       {link}
                     </Typography>
