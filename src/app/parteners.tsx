@@ -26,6 +26,11 @@ export function Parteners() {
               variant="h3"
               className="text-black text-center font-bold mb-6"
               as="h3"
+              placeholder=""
+              onPointerEnterCapture={() => {
+              }}
+              onPointerLeaveCapture={() => {
+              }}
           >
            Partenerii ediției 2024
           </Typography>
