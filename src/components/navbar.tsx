@@ -64,7 +64,7 @@ const NAV_MENU = [
   },
   {
     name: "Despre noi",
-    icon: RectangleStackIcon,
+    icon: UserCircleIcon,
     href: "../app/despre.tsx",
   },
 ];
