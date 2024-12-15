@@ -106,6 +106,7 @@ export function Navbar() {
               isScrolling ? "shadow-lg" : ""
           }`}
           placeholder=""
+
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
       >
