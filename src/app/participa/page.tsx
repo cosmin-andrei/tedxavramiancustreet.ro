@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./TicketsPage.module.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -15,7 +15,7 @@ const tickets = [
             "Album foto de la eveniment",
             "Acces la activări ale partenerilor",
         ],
-        buttonText: "IA BILET",
+        buttonText: "Ia bilet acum",
         badge: null,
     },
     {
@@ -27,7 +27,7 @@ const tickets = [
             "Album foto de la eveniment",
             "Acces la activări ale partenerilor",
         ],
-        buttonText: "IA BILET",
+        buttonText: "Ia bilet acum",
         badge: "OFERTĂ DE CUPLU",
     },
     {
@@ -41,19 +41,37 @@ const tickets = [
             "Loc în primele rânduri",
             "Acces la cina cu speakerii",
         ],
-        buttonText: "IA BILET",
-        badge: "Locuri limitate",
+        buttonText: "Ia bilet acum",
+        badge: "LOCURI LIMITATE",
     },
 ];
 
-export function TicketsPage() {
+export default function TicketsPage() {
+    // Adaugă scriptul extern în mod dinamic pentru a respecta standardele Next.js
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://l.oveit.com/embed/a111c56a72.js?l=ro";
+        script.type = "text/javascript";
+        script.setAttribute("data-eventid", "a111c56a72");
+        script.setAttribute("data-init", "pending");
+        document.body.appendChild(script);
+
+        return () => {
+            document.body.removeChild(script);
+        };
+    }, []);
+
     return (
         <>
-            <Navbar/>
+            <Navbar />
 
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
+                <div className={styles.heroContent}>
+                    <h1>Bilete pentru un <span>Eveniment Unic</span></h1>
+                    <p>Profită de ofertele limitate și rezervă-ți locul acum!</p>
+                </div>
             </section>
 
             {/* Tickets Section */}
@@ -70,8 +88,12 @@ export function TicketsPage() {
                                 )}
                                 <span className={styles.newPrice}>{ticket.price}</span>
                             </div>
-                            <button className={styles.buyButton}
-                                    onClick={() => window.open("#ticket")}>{ticket.buttonText}</button>
+                            <button
+                                className={styles.buyButton}
+                                onClick={() => window.open("#ticket", "_blank")}
+                            >
+                                {ticket.buttonText}
+                            </button>
                             <div className={styles.benefits}>
                                 <h3>Ce este inclus:</h3>
                                 <ul>
@@ -85,15 +107,10 @@ export function TicketsPage() {
                 </div>
             </div>
 
-            <div className={styles.oveitContainer}>
+            {/* Oveit Embed Section */}
+            <div className={styles.oveitContainer} id="ticket"></div>
 
-            {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-            <script type="text/javascript" src="https://l.oveit.com/embed/a111c56a72.js?l=ro"
-                    data-eventid="a111c56a72" data-init="pending"></script>
-            </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }
-
-export default TicketsPage;
