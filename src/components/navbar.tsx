@@ -50,7 +50,7 @@ const NAV_MENU = [
   {
     name: "Corporate",
     icon: BuildingOfficeIcon,
-    href: "../app/corporate.tsx",
+    href: "corporate",
   },
   {
     name: "Merch",
@@ -60,7 +60,7 @@ const NAV_MENU = [
   {
     name: "Parteneri",
     icon: HeartIcon,
-    href: "#parteneri",
+    href: "/#parteneri",
   },
   {
     name: "Despre noi",
@@ -110,7 +110,7 @@ export function Navbar() {
           onPointerEnterCapture={() => {}}
           onPointerLeaveCapture={() => {}}
       >
-        <div className="container mx-auto flex items-center justify-between">
+        <div className="missionContainer mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="/">
             <img
@@ -169,7 +169,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         <Collapse open={open}>
-          <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
+          <div className="missionContainer mx-auto mt-4 rounded-lg bg-white px-6 py-5">
             <ul className="flex flex-col gap-4 text-gray-900">
               {NAV_MENU.map(({ name, icon: Icon, href }) => (
                   <NavItem key={name} href={href}>

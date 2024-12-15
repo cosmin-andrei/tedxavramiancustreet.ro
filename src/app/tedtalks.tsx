@@ -107,7 +107,7 @@ export function Tedtalks() {
                     </div>
                 ))}
             </div>
-            <div className="container mx-auto text-center">
+            <div className="missionContainer mx-auto text-center">
                 <Button
                     onClick={() => (window.location.href = "editii")}
                     variant="gradient"

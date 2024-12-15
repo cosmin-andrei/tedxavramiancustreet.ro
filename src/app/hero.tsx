@@ -82,7 +82,7 @@ function Hero() {
 
             {/* Content */}
             <div className="grid min-h-[130vh] px-8 pt-32">
-                <div className="container relative z-10 mx-auto grid place-items-center text-center">
+                <div className="missionContainer relative z-10 mx-auto grid place-items-center text-center">
                     {/* Event Theme */}
                     <Typography
                         variant="h1"

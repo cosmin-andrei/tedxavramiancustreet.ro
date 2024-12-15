@@ -30,7 +30,7 @@ function ImageSlider() {
 
     return (
         <div className="bg-black py-10">
-            <div className="container mx-auto text-center">
+            <div className="missionContainer mx-auto text-center">
                 <Typography
                     variant="h3"
                     className="text-white font-bold mb-6"
@@ -75,7 +75,7 @@ function ImageSlider() {
 export function AboutEvent() {
     return (
         <div>
-            <section className="container mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 px-4 py-10">
+            <section className="missionContainer mx-auto grid grid-cols-1 md:grid-cols-2 items-start gap-8 px-4 py-10">
                 {/* Video Column */}
                 <div className="w-full h-[300px] flex justify-center overflow-hidden">
                     <video

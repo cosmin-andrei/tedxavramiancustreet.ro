@@ -20,8 +20,8 @@ const SPONSORS = [
 
 export function Parteners() {
   return (
-      <section className="py-8 px-8 lg:py-20">
-        <div className="container mx-auto text-center">
+      <section className="py-8 px-8 lg:py-20" id="parteneri">
+        <div className="missionContainer mx-auto text-center">
           <Typography
               variant="h3"
               className="text-black text-center font-bold mb-6"
