@@ -14,7 +14,7 @@ const MerchPage = () => {
             title: "Tricou TEDx",
             category: "Îmbrăcăminte",
             price: 50,
-            image: "/images/tricou.jpg",
+            image: "/image/event.jpg",
             url: "https://exemplu.com/produs/tricou"
         },
         {
@@ -22,7 +22,7 @@ const MerchPage = () => {
             title: "Cana TEDx",
             category: "Accesorii",
             price: 30,
-            image: "/images/cana.jpg",
+            image: "/image/event.jpg",
             url: "https://exemplu.com/produs/cana"
         },
         {
@@ -30,7 +30,7 @@ const MerchPage = () => {
             title: "Agenda TEDx",
             category: "Birotică",
             price: 40,
-            image: "/images/agenda.jpg",
+            image: "/image/event.jpg",
             url: "https://exemplu.com/produs/agenda"
         }
     ];
