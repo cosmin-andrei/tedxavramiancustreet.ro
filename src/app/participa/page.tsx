@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "./TicketsPage.module.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -47,19 +47,27 @@ const tickets = [
 ];
 
 export default function TicketsPage() {
-    // Adaugă scriptul extern în mod dinamic pentru a respecta standardele Next.js
+    const oveitRef = useRef<HTMLDivElement>(null);
+
     useEffect(() => {
+        // Creare script pentru Oveit
         const script = document.createElement("script");
         script.src = "https://l.oveit.com/embed/a111c56a72.js?l=ro";
         script.type = "text/javascript";
+        script.async = true;
         script.setAttribute("data-eventid", "a111c56a72");
-        script.setAttribute("data-init", "pending");
-        document.body.appendChild(script);
+        script.setAttribute("data-init", "immediate");
+        script.setAttribute("data-container", "oveitContainer");
 
-        return () => {
-            document.body.removeChild(script);
-        };
+        // Adăugare script în containerul desemnat
+        if (oveitRef.current) {
+            oveitRef.current.appendChild(script);
+        }
     }, []);
+
+    const scrollToOveit = () => {
+        oveitRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <>
@@ -68,10 +76,6 @@ export default function TicketsPage() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
-                <div className={styles.heroContent}>
-                    <h1>Bilete pentru un <span>Eveniment Unic</span></h1>
-                    <p>Profită de ofertele limitate și rezervă-ți locul acum!</p>
-                </div>
             </section>
 
             {/* Tickets Section */}
@@ -90,7 +94,7 @@ export default function TicketsPage() {
                             </div>
                             <button
                                 className={styles.buyButton}
-                                onClick={() => window.open("#ticket", "_blank")}
+                                onClick={scrollToOveit}
                             >
                                 {ticket.buttonText}
                             </button>
@@ -108,7 +112,7 @@ export default function TicketsPage() {
             </div>
 
             {/* Oveit Embed Section */}
-            <div className={styles.oveitContainer} id="ticket"></div>
+            <div className={styles.oveitContainer} id="oveitContainer" ref={oveitRef}></div>
 
             <Footer />
         </>
