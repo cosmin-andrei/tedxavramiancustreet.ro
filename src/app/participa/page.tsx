@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import styles from "./TicketsPage.module.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -49,26 +49,6 @@ const tickets = [
 export default function TicketsPage() {
     const oveitRef = useRef<HTMLDivElement>(null);
 
-    useEffect(() => {
-        // Creare script pentru Oveit
-        const script = document.createElement("script");
-        script.src = "https://l.oveit.com/embed/a111c56a72.js?l=ro";
-        script.type = "text/javascript";
-        script.async = true;
-        script.setAttribute("data-eventid", "a111c56a72");
-        script.setAttribute("data-init", "immediate");
-        script.setAttribute("data-container", "oveitContainer");
-
-        // Adăugare script în containerul desemnat
-        if (oveitRef.current) {
-            oveitRef.current.appendChild(script);
-        }
-    }, []);
-
-    const scrollToOveit = () => {
-        oveitRef.current?.scrollIntoView({ behavior: "smooth" });
-    };
-
     return (
         <>
             <Navbar />
@@ -94,7 +74,9 @@ export default function TicketsPage() {
                             </div>
                             <button
                                 className={styles.buyButton}
-                                onClick={scrollToOveit}
+                                onClick={() =>
+                                    oveitRef.current?.scrollIntoView({ behavior: "smooth" })
+                                }
                             >
                                 {ticket.buttonText}
                             </button>
@@ -112,7 +94,14 @@ export default function TicketsPage() {
             </div>
 
             {/* Oveit Embed Section */}
-            <div className={styles.oveitContainer} id="oveitContainer" ref={oveitRef}></div>
+            <div
+                className={styles.oveitContainer}
+                id="oveitContainer"
+                ref={oveitRef}
+                dangerouslySetInnerHTML={{
+                    __html: `<script type="text/javascript" src="https://l.oveit.com/embed/a111c56a72.js?l=ro" data-eventid="a111c56a72" data-init="pending"></script>`,
+                }}
+            ></div>
 
             <Footer />
         </>
