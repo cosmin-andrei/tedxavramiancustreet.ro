@@ -1,12 +1,12 @@
-import { Typography } from "@material-tailwind/react";
+import {Typography} from "@material-tailwind/react";
 import React from "react";
 
 const CURRENT_YEAR = new Date().getFullYear();
 
 const LINKS = [
-    { name: "Confidențialitate", url: "https://onedu.ro/confidentialitate" },
-    { name: "Termeni", url: "https://onedu.ro/termeni" },
-    { name: "Contact", url: "mailto:contact@tedxavramiancustreet.ro" },
+    {name: "Confidențialitate", url: "https://onedu.ro/confidentialitate"},
+    {name: "Termeni", url: "https://onedu.ro/termeni"},
+    {name: "Contact", url: "mailto:contact@tedxavramiancustreet.ro"},
 ];
 
 export function Footer() {
@@ -25,8 +25,10 @@ export function Footer() {
                                     variant="small"
                                     className="font-normal text-white hover:text-gray-300 transition-colors"
                                     placeholder=""
-                                    onPointerEnterCapture={() => {}}
-                                    onPointerLeaveCapture={() => {}}
+                                    onPointerEnterCapture={() => {
+                                    }}
+                                    onPointerLeaveCapture={() => {
+                                    }}
                                 >
                                     {link.name}
                                 </Typography>
@@ -56,7 +58,12 @@ export function Footer() {
 
                 {/* Partners Section */}
                 <div className="flex flex-1 justify-end items-center space-x-2">
-                    <Typography variant="small" className="text-white font-semibold text-sm">
+                    <Typography variant="small" className="text-white font-semibold text-sm"
+                                placeholder=""
+                                onPointerEnterCapture={() => {
+                                }}
+                                onPointerLeaveCapture={() => {
+                                }}>
                         Partener digitalizare
                     </Typography>
                     <a href="https://web365.ro" target="_blank" rel="noopener noreferrer">
