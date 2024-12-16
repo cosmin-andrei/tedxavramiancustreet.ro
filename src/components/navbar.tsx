@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Navbar as MTNavbar,
@@ -52,11 +54,11 @@ const NAV_MENU = [
     icon: BuildingOfficeIcon,
     href: "corporate",
   },
-  {
-    name: "Merch",
-    icon: ShoppingBagIcon,
-    href: "merch",
-  },
+  // {
+  //   name: "Merch",
+  //   icon: ShoppingBagIcon,
+  //   href: "merch",
+  // },
   {
     name: "Parteneri",
     icon: HeartIcon,
@@ -183,7 +185,7 @@ export function Navbar() {
                 <Button
                     onClick={() => (window.location.href = "/participa")}
                     color="red"
-                    className="rounded-lg transition-colors duration-300 hover:bg-darkred"
+                    className="rounded-lg transition-colors duration-300 hover:#eb0028"
                     placeholder=""
                     onPointerEnterCapture={() => {}}
                     onPointerLeaveCapture={() => {}}

@@ -11,9 +11,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Event Landing Page",
+  title: "TEDxAvram Iancu Street - Life Chaning Decisions",
   description:
-    "Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.",
+    "TEDxAvram Iancu Street este locul unde inspirația și inovația se întâlnesc pentru a schimba lumea. Descoperă poveștile care au schimbat vieți și fă parte dintr-o comunitate de oameni care își doresc să facă o diferență.",
 };
 
 export default function RootLayout({
@@ -22,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="ro">
       <head>
         <script
           defer
-          data-site="YOUR_DOMAIN_HERE"
+          data-site="https://tedxavramiancustreet.ro"
           src="https://api.nepcha.com/js/nepcha-analytics.js"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />

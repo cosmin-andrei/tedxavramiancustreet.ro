@@ -11,6 +11,9 @@ export function DespreComponent() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
+                <div className={styles.heroText}>
+                    <h3>Despre TEDxAvram Iancu Street</h3>
+                </div>
             </section>
 
 

@@ -56,11 +56,14 @@ export default function TicketsPage() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
+                <div className={styles.heroText}>
+                    <h3>Participă acum</h3>
+                </div>
             </section>
 
             {/* Tickets Section */}
             <div className={styles.ticketsContainer}>
-                <h1 className={styles.title}>LIFE CHANGING DECISIONS <span>TICKETS</span></h1>
+            <h1 className={styles.title}>LIFE CHANGING DECISIONS <span>TICKETS</span></h1>
                 <div className={styles.ticketsWrapper}>
                     {tickets.map((ticket, index) => (
                         <div key={index} className={styles.ticketCard}>

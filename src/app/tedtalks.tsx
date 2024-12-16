@@ -109,7 +109,7 @@ export function Tedtalks() {
             </div>
             <div className="missionContainer mx-auto text-center">
                 <Button
-                    onClick={() => (window.location.href = "editii")}
+                    onClick={() => (window.location.href = "/2024")}
                     variant="gradient"
                     color="red"
                     className="px-6 py-3 text-white shadow-lg hover:shadow-xl mt-10 mb-10"

@@ -112,22 +112,42 @@ function Hero() {
 
                     {/* Action Button */}
                     <Button
-                        onClick={() => (window.location.href = "/participa")}
+                        onClick={() => (window.location.href = "/ticket")}
                         variant="gradient"
                         color="white"
                         className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mb-12"
-                        placeholder=""
-                        onPointerEnterCapture={() => {
-                        }}
-                        onPointerLeaveCapture={() => {
-                        }}
                     >
                         Cumpără bilet
                     </Button>
                 </div>
             </div>
         </div>
-    )
+
+                    {/*<div className="grid w-full max-w-6xl grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 mb-8">*/}
+                    {/*    {speakers.map((speaker, index) => (*/}
+                    {/*        <div key={index} className="text-center">*/}
+                    {/*            <a href={speaker.link}>*/}
+                    {/*                <img*/}
+                    {/*                    src={speaker.image}*/}
+                    {/*                    alt={speaker.name}*/}
+                    {/*                    className="mx-auto h-24 w-24 rounded-full shadow-lg hover:scale-105 transition-transform"*/}
+                    {/*                />*/}
+                    {/*            </a>*/}
+                    {/*            <Typography*/}
+                    {/*                variant="paragraph"*/}
+                    {/*                color="white"*/}
+                    {/*                className="mt-2 text-sm font-medium"*/}
+                    {/*                as="p"*/}
+                    {/*                placeholder=""*/}
+                    {/*                onPointerEnterCapture={() => {}}*/}
+                    {/*                onPointerLeaveCapture={() => {}}*/}
+                    {/*                >*/}
+                    {/*                {speaker.name}*/}
+                    {/*        </Typography>*/}
+                    {/*        </div>*/}
+                    {/*    ))}*/}
+                    {/*</div>*/}
+        ;
 }
 
 export default function EventPage() {

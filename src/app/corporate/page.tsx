@@ -14,6 +14,9 @@ export default function CorporatePage() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>
+                <div className={styles.heroText}>
+                    <h3>Corporate</h3>
+                </div>
             </section>
 
             {/* About Section */}
