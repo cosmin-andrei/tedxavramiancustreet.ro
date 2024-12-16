@@ -16,6 +16,59 @@ const speakers = [
     {name: "Raly Țonea", image: "/image/editia2025/team/ralytonea.png", link: "/editia2025/raly-tonea"},
 ];
 
+function Hero() {
+    return (
+        <div className="relative min-h-[70vh] w-full bg-[url('/image/event.jpg')] bg-cover bg-center bg-no-repeat">
+            {/* Overlay */}
+            <div className="absolute inset-0 h-full w-full bg-black/70" />
+
+            {/* Content */}
+            <div className="grid min-h-[70vh] px-4 sm:px-8 pt-20 sm:pt-32 gap-2">
+                <div className="missionContainer relative z-10 mx-auto grid place-items-center text-center">
+                    {/* Titlu */}
+                    <Typography
+                        variant="h1"
+                        color="white"
+                        className="mb-1 text-3xl font-bold sm:text-4xl lg:text-5xl"
+                        as="h1"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
+                    >
+                        Life Changing Decisions
+                    </Typography>
+
+                    {/* Subtitlu */}
+                    <Typography
+                        variant="h4"
+                        color="white"
+                        className="mt-0 mb-4 text-base sm:text-lg lg:text-xl"
+                        as="h4"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
+                    >
+                        24 mai 2025 @ Cluj-Napoca
+                    </Typography>
+
+                    {/* Action Button */}
+                    <Button
+                        onClick={() => (window.location.href = "/participa")}
+                        variant="gradient"
+                        color="white"
+                        className="px-4 sm:px-6 py-2 sm:py-3 text-gray-900 text-sm sm:text-base shadow-lg hover:shadow-xl mb-8 sm:mb-12"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
+                    >
+                        Cumpără bilet
+                    </Button>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function Countdown() {
     let eventDate: Date;
     eventDate = new Date("2025-05-24T13:00:00"); // Data și ora evenimentului
@@ -39,7 +92,7 @@ function Countdown() {
                 const minute = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
                 const secunde = Math.floor((diff % (1000 * 60)) / 1000);
 
-                setTimeLeft({luni, zile, ore, minute, secunde});
+                setTimeLeft({ luni, zile, ore, minute, secunde });
             } else {
                 clearInterval(interval);
             }
@@ -49,9 +102,8 @@ function Countdown() {
     }, [eventDate]);
 
     return (
-        <div className="py-12 bg-black text-white text-center">
-            <Typography variant="h5" className="mb-4 font-bold"
-                        as="h5"
+        <div className="py-8 sm:py-12 bg-black text-white text-center">
+            <Typography variant="h5" className="mb-4 font-bold text-lg sm:text-2xl" as="h5"
                         placeholder=""
                         onPointerEnterCapture={() => {
                         }}
@@ -59,81 +111,21 @@ function Countdown() {
                         }}>
                 Au mai rămas
             </Typography>
-            <div className="flex justify-center gap-4">
+            <div className="flex flex-wrap justify-center gap-2 sm:gap-4">
                 {Object.entries(timeLeft).map(([key, value]) => (
                     <div
                         key={key}
-                        className="flex flex-col items-center bg-gray-200 text-black rounded-lg px-4 py-2 shadow-lg"
+                        className={`flex flex-col items-center bg-gray-200 text-black rounded-lg px-2 py-2 sm:px-4 sm:py-2 shadow-lg w-[70px] sm:w-auto ${
+                            key === "secunde" ? "hidden sm:flex" : ""
+                        }`}
                     >
-                        <span className="text-2xl font-bold">{value}</span>
-                        <span className="text-sm font-medium capitalize">{key}</span>
+                        <span className="text-xl sm:text-2xl font-bold">{value}</span>
+                        <span className="text-xs sm:text-sm font-medium capitalize">{key}</span>
                     </div>
                 ))}
             </div>
         </div>
     );
-}
-
-function Hero() {
-    return (
-        // <div className="relative min-h-[130vh] w-full bg-[url('/image/event.jpg')] bg-cover bg-no-repeat">
-        //     {/* Overlay */}
-        //     <div className="absolute inset-0 h-full w-full bg-black/70"/>
-        //
-        //     {/* Content */}
-        //     <div className="grid min-h-[130vh] px-8 pt-32">
-
-        <div className="relative min-h-[80vh] w-full bg-[url('/image/event.jpg')] bg-cover bg-no-repeat">
-            {/* Overlay */}
-            <div className="absolute inset-0 h-full w-full bg-black/70"/>
-
-            {/* Content */}
-            <div className="grid min-h-[80vh] px-8 pt-32 gap-2">
-                <div className="missionContainer relative z-10 mx-auto grid place-items-center text-center">
-                    {/* Titlu */}
-                    <Typography
-                        variant="h1"
-                        color="white"
-                        className="mb-2 text-4xl font-bold lg:text-5xl"
-                        as="h1"
-                        placeholder=""
-                        onPointerEnterCapture={() => {}}
-                        onPointerLeaveCapture={() => {}}
-                    >
-                        Life Changing Decisions
-                    </Typography>
-
-                    {/* Subtitlu */}
-                    <Typography
-                        variant="h4"
-                        color="white"
-                        className="mt-0 mb-6 text-lg lg:text-xl"
-                        as="h4"
-                        placeholder=""
-                        onPointerEnterCapture={() => {}}
-                        onPointerLeaveCapture={() => {}}
-                    >
-                        24 mai 2025 @ Cluj-Napoca
-                    </Typography>
-
-                    {/* Action Button */}
-                    <Button
-                        onClick={() => (window.location.href = "/participa")}
-                        variant="gradient"
-                        color="white"
-                        className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mb-12"
-                        placeholder=""
-                        onPointerEnterCapture={() => {
-                        }}
-                        onPointerLeaveCapture={() => {
-                        }}
-                    >
-                        Cumpără bilet
-                    </Button>
-                </div>
-            </div>
-        </div>
-    )
 }
 
 export default function EventPage() {
