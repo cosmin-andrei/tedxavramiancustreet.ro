@@ -62,7 +62,7 @@ export function Tedtalks() {
                 Inspirație de la edițiile anterioare
             </Typography>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
                 {VIDEOS.map((video, index) => (
                     <div
                         key={index}
@@ -96,17 +96,13 @@ export function Tedtalks() {
                         <Typography
                             variant="paragraph"
                             className="absolute bottom-0 left-0 w-full bg-black/75 text-white text-center py-2 text-sm font-bold"
-                            placeholder=""
-                            onPointerEnterCapture={() => {
-                            }}
-                            onPointerLeaveCapture={() => {
-                            }}
                         >
                             {video.name}
                         </Typography>
                     </div>
                 ))}
             </div>
+
             <div className="missionContainer mx-auto text-center">
                 <Button
                     onClick={() => (window.location.href = "/2024")}
