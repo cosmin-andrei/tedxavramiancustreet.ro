@@ -96,6 +96,9 @@ function Hero() {
                         color="white"
                         className="mb-2 text-4xl font-bold lg:text-5xl"
                         as="h1"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
                     >
                         Life Changing Decisions
                     </Typography>
@@ -106,6 +109,9 @@ function Hero() {
                         color="white"
                         className="mt-0 mb-6 text-lg lg:text-xl"
                         as="h4"
+                        placeholder=""
+                        onPointerEnterCapture={() => {}}
+                        onPointerLeaveCapture={() => {}}
                     >
                         24 mai 2025 @ Cluj-Napoca
                     </Typography>
