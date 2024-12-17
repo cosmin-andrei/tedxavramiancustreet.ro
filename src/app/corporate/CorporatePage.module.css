@@ -33,20 +33,17 @@
     margin: 0;
 }
 
-.heroContentWrapper {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 1rem;
-}
-
 /* ABOUT SECTION */
 .aboutSection {
     width: 100%;
-    padding: 3rem 0 0rem;
+    padding: 3rem 1.5rem; /* Ajustează padding pentru toate dispozitivele */
     background-color: #fdfdff;
+}
+
+@media (max-width: 768px) {
+    .aboutSection {
+        padding: 2rem 1rem; /* Padding redus pentru dispozitive mici */
+    }
 }
 
 .aboutContentWrapper {
@@ -68,6 +65,7 @@
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
+    text-align: left; /* Aliniere la stânga */
 }
 
 .aboutText {
@@ -78,52 +76,73 @@
 
 .aboutImage {
     border-radius: 10px;
-
+    width: 100%;
+    height: auto;
 }
 
-/* Container principal */
-
-.missSection{
+/* MISS SECTION */
+.missSection {
     width: 100%;
-    padding: 0rem 0 3rem;
+    padding: 3rem 2rem;
     background-color: #fdfdff;
 }
 
-.missContainer{
-    width: 100%;
+.missContainer {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
-    padding: 5rem;
+    justify-content: flex-start; /* Aliniere la stânga */
+    align-items: flex-start; /* Elemente aliniate la stânga */
 }
 
-/* Subtitlu */
 .subtitleMission {
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 1rem;
+    text-align: left; /* Aliniere la stânga */
     color: #000;
 }
 
+/* Media Queries pentru ajustări */
+@media (max-width: 1024px) {
+    .missContainer,
+    .aboutContentWrapper {
+        flex-direction: column; /* Elemente pe verticală */
+        align-items: flex-start; /* Aliniere la stânga */
+    }
+
+    .missSection {
+        padding: 2rem 1.5rem; /* Padding redus pe laptop */
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutTitle,
+    .subtitleMission {
+        font-size: 1.5rem;
+        text-align: left; /* Menține alinierea la stânga */
+    }
+}
+
+/* Imaginea */
 .missImage {
     width: 100%;
-    height: 300px; /* Înălțime fixă dorită */
-    overflow: hidden; /* Ascunde părțile care ies din container */
-    border-radius: 10px; /* Rotunjirea colțurilor */
-    position: relative; /* Necesită pentru conținutul controlat */
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
 }
 
 .missImage img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Decupează imaginea pentru a umple containerul */
-    object-position: center; /* Centrează imaginea decupată */
+    object-fit: cover;
+    object-position: center;
 }
-
 
 /* Paragrafe */
 .paragraphMission {
-    margin-bottom: 0.1rem;
+    margin-bottom: 1rem;
     text-align: justify;
     font-size: 1rem;
 }

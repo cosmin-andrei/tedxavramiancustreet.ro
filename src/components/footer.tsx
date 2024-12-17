@@ -1,8 +1,8 @@
 "use client";
 import {Typography} from "@material-tailwind/react";
 import React from "react";
+import Image from "next/image";
 
-const CURRENT_YEAR = new Date().getFullYear();
 
 const LINKS = [
     {name: "Confidențialitate", url: "https://onedu.ro/confidentialitate"},
@@ -41,18 +41,20 @@ export function Footer() {
                 {/* SAL și SOL imagini aliniate la mijloc */}
                 <div className="flex justify-center items-center gap-4 pb-4 md:pb-0">
                     <a href="https://anpc.ro/ce-este-sal/" target="_blank" rel="noopener noreferrer">
-                        <img
+                        <Image
                             src="/logos/SAL.png"
                             alt="SAL - Soluționarea alternativă a litigiilor"
-                            className="h-6 w-auto"
+                            width={100}
+                            height={100}
                         />
                     </a>
                     <a href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=RO"
                        target="_blank" rel="noopener noreferrer">
-                        <img
+                        <Image
                             src="/logos/SOL.png"
                             alt="SOL - Soluționarea online a litigiilor"
-                            className="h-6 w-auto"
+                            width={100}
+                            height={100}
                         />
                     </a>
                 </div>
@@ -68,10 +70,11 @@ export function Footer() {
                         Partener digitalizare
                     </Typography>
                     <a href="https://web365.ro" target="_blank" rel="noopener noreferrer">
-                        <img
+                        <Image
                             src="/logos/web365-logo.png"
                             alt="Partener Digitalizare"
-                            className="h-6 w-auto"
+                            width={100}
+                            height={100}
                         />
                     </a>
                 </div>

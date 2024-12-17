@@ -3,6 +3,7 @@
 import {Button, Typography} from "@material-tailwind/react";
 import React, {useState} from "react";
 import Modal from "react-modal";
+import Image from "next/image";
 
 const VIDEOS = [
     {
@@ -48,7 +49,7 @@ export function Tedtalks() {
     };
 
     return (
-        <section className="container mx-auto py-16">
+        <section className="container mx-auto py-16 px-4 sm:px-6 md:px-0">
             <Typography
                 variant="h3"
                 className="text-black text-center font-bold mb-6"
@@ -69,10 +70,12 @@ export function Tedtalks() {
                         className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg"
                         onClick={() => openModal(video.videoUrl)}
                     >
-                        <img
+                        <Image
                             src={video.image}
                             alt={video.name}
                             className="w-full h-56 object-cover group-hover:opacity-75"
+                            width={300} // specifică lățimea
+                            height={200} // specifică înălțimea
                         />
                         <div
                             className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-all">
@@ -137,7 +140,6 @@ export function Tedtalks() {
                             src={currentVideo}
                             title="Video"
                             className="w-full h-[400px]"
-                            frameBorder="0"
                             allow="autoplay; encrypted-media"
                             allowFullScreen
                         ></iframe>

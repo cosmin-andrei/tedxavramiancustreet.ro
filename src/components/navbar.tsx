@@ -9,15 +9,13 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import {
-  RectangleStackIcon,
   UserCircleIcon,
-  CommandLineIcon,
   BuildingOfficeIcon,
-  ShoppingBagIcon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
 import {HeartIcon} from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 interface NavItemProps {
   children: React.ReactNode;
@@ -115,10 +113,12 @@ export function Navbar() {
         <div className="missionContainer mx-auto flex items-center justify-between">
           {/* Logo */}
           <a href="/">
-            <img
+            <Image
                 src={isScrolling ? "/logos/logo-black.png" : "/logos/logo-white.png"}
                 alt="Logo"
-                className="h-10 transition-all duration-300"
+                width={120}
+                height={120}
+                className="transition-all duration-300"
             />
           </a>
           {/* Menu Items */}

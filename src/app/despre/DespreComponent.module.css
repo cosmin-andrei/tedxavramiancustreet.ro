@@ -78,7 +78,28 @@
 
 .aboutImage {
     border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
 
+@media (max-width: 768px) {
+    .aboutImage {
+        margin-left: 1rem; /* Spațiu la stânga */
+        margin-right: 1rem; /* Spațiu la dreapta */
+        width: 90%;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .aboutContentWrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .aboutTextWrapper {
+        max-width: 100%;
+    }
 }
 
 /* SOLUTIONS SECTION */
@@ -141,11 +162,21 @@
     padding: 4rem 2rem;
 }
 
+/* TEAM SECTION */
 .teamWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Implicit pentru ecrane mari */
     gap: 2rem;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .teamWrapper {
+        grid-template-columns: repeat(2, 1fr); /* 2 coloane fixe pe telefon */
+        gap: 1rem; /* Spațiu redus între carduri */
+        margin-left: 1rem; /* Spațiu lateral stânga */
+        margin-right: 1rem; /* Spațiu lateral dreapta */
+    }
 }
 
 .teamMember {
@@ -154,8 +185,14 @@
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .teamMember {
+        padding: 0.5rem; /* Padding redus pentru telefon */
+    }
+}
+
 
 .teamMember:hover {
     transform: translateY(-10px);
@@ -172,6 +209,13 @@
     margin: 0 auto; /* Centrează imaginea în containerul părinte */
 }
 
+@media (max-width: 768px) {
+    .teamImage {
+        width: 80px;
+        height: 80px;
+    }
+}
+
 .teamName {
     font-size: 1.2rem;
     font-weight: bold;
@@ -179,9 +223,20 @@
     color: #333;
 }
 
+@media (max-width: 768px) {
+    .teamName {
+        font-size: 1rem;
+    }
+}
+
 .teamRole {
     font-size: 1rem;
     color: #777;
+}
+@media (max-width: 768px) {
+    .teamRole {
+        font-size: 0.8rem;
+    }
 }
 
 /* VISION SECTION */

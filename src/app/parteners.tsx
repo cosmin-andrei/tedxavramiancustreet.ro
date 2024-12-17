@@ -1,6 +1,6 @@
 "use client";
 
-import React, {Suspense} from "react";
+import React from "react";
 import Image from "next/image";
 import {Typography} from "@material-tailwind/react";
 
@@ -33,7 +33,7 @@ export function Parteners() {
                     {SPONSORS.map((logo, key) => (
                         <div
                             key={key}
-                            className="flex items-center justify-center bg-white border border-gray-300 rounded-lg p-4"
+                            className="flex items-center justify-center bg-white border border-gray-300 rounded-lg p-px aspect-square"
                         >
                             <Image
                                 width={156}
@@ -43,6 +43,7 @@ export function Parteners() {
                                 className="object-contain"
                             />
                         </div>
+
                     ))}
                 </div>
             </div>

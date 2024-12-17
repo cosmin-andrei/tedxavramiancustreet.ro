@@ -3,7 +3,7 @@
 import React from "react";
 import Slider from "react-slick";
 import {Button, Typography} from "@material-tailwind/react";
-
+import Image from "next/image";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -29,26 +29,30 @@ function ImageSlider() {
     };
 
     return (
-        <div className="bg-black py-10">
+        <div className="bg-black py-10 px-4 md:px-8">
             <div className="missionContainer mx-auto text-center">
                 <Typography
                     variant="h3"
                     className="text-white font-bold mb-6"
                     as="h3"
                     placeholder=""
-                    onPointerEnterCapture={() => {}}
-                    onPointerLeaveCapture={() => {}}
+                    onPointerEnterCapture={() => {
+                    }}
+                    onPointerLeaveCapture={() => {
+                    }}
                 >
                     2024 - ediția dedicată inovației în educație
                 </Typography>
 
-                <div className="max-w-4xl mx-auto">
+                <div className="max-w-4xl mx-auto px-2 md:px-4">
                     <Slider {...settings}>
                         {sliderImages.map((image, index) => (
                             <div key={index} className="flex justify-center">
-                                <img
+                                <Image
                                     src={image.src}
                                     alt={image.alt}
+                                    width={5000}
+                                    height={4000}
                                     className="rounded-lg shadow-lg"
                                 />
                             </div>
@@ -60,10 +64,12 @@ function ImageSlider() {
                     onClick={() => (window.location.href = "https://www.facebook.com/media/set/?set=a.287149584426600&type=3&rdid=wx3N3PEUhpglUexd&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F15S9rvM6oF%2F")}
                     variant="gradient"
                     color="white"
-                    className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mt-10 mb-10"
+                    className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-xl mt-2 mb-6"
                     placeholder=""
-                    onPointerEnterCapture={() => {}}
-                    onPointerLeaveCapture={() => {}}
+                    onPointerEnterCapture={() => {
+                    }}
+                    onPointerLeaveCapture={() => {
+                    }}
                 >
                     Vezi mai multe
                 </Button>

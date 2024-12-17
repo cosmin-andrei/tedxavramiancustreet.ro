@@ -8,13 +8,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "start": "cross-env NODE_ENV=production next start"
+
   },
   "dependencies": {
     "@heroicons/react": "2.0.18",
     "@material-tailwind/react": "^2.0.0",
     "bootstrap": "^5.3.3",
+    "cross-env": "^7.0.3",
     "data": "^0.6.1",
     "next": "13.4.0",
     "react": "18",
