@@ -10,4 +10,11 @@ const nextConfig = {
   },
 };
 
+module.exports = {
+  experimental: {
+    workerThreads: false,
+    cpus: 1,
+  },
+};
+
 module.exports = nextConfig;
