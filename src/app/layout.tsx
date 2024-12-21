@@ -41,6 +41,12 @@ export default function RootLayout({
 
         <body className={roboto.className}>
         <Script
+            id="cookieyes"
+            type="text/javascript"
+            src="https://cdn-cookieyes.com/client_data/065537713e9f3f75679a8979/script.js"
+            async
+        ></Script>
+        <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-72E9MLT5DC"
             strategy="afterInteractive"
         />
