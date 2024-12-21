@@ -38,6 +38,7 @@ export default function RootLayout({
                 referrerPolicy="no-referrer"
             />
         </Head>
+
         <body className={roboto.className}>
         <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-72E9MLT5DC"
