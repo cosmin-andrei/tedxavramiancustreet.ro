@@ -4,18 +4,26 @@ import React from "react";
 import Image from "next/image";
 import {Typography} from "@material-tailwind/react";
 
+// const SPONSORS = [
+//     "onedu.png",
+//     "epg.png",
+//     "aqua.svg",
+//     "jidvei.png",
+//     "avon.png",
+//     "cartofiserie.png",
+//     "publica.webp",
+//     "m5.webp",
+//     "cinema.webp",
+//     "primarie.webp",
+//     "ellproject.png"
+// ];
+
 const SPONSORS = [
     "onedu.png",
-    "epg.png",
-    "aqua.svg",
-    "jidvei.png",
-    "avon.png",
-    "cartofiserie.png",
     "publica.webp",
     "m5.webp",
     "cinema.webp",
     "primarie.webp",
-    "ellproject.png"
 ];
 
 export function Parteners() {
@@ -27,7 +35,7 @@ export function Parteners() {
                     className="text-black text-center font-bold mb-6"
                     as="h3"
                 >
-                    Partenerii ediției 2024
+                    Partenerii ediției 2025
                 </Typography>
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 items-center justify-center">
                     {SPONSORS.map((logo, key) => (
