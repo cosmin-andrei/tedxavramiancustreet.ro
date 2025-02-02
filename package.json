@@ -7,7 +7,7 @@
   "homepage": "https://tedxavramiancustreet.ro",
   "scripts": {
     "dev": "next dev",
-    "build": "NODE_OPTIONS='--max_old_space_size=4096' next build",
+    "build": "next build",
     "start": "NODE_ENV=production next start"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "cross-env": "^7.0.3",
     "data": "^0.6.1",
     "next": "13.4.0",
+    "next-sitemap": "^4.2.3",
     "react": "18",
     "react-dom": "18",
     "react-slick": "^0.30.2",

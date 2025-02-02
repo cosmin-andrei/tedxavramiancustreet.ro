@@ -30,6 +30,31 @@ export default function RootLayout({
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.png" type="image/png" />
 
+            {/* SEO Meta Tags */}
+            <meta name="title" content="TEDxAvram Iancu Street - Life Changing Decisions" />
+            <meta name="description" content="Evenimentul TEDxAvram Iancu Street din Cluj-Napoca aduce în prim-plan povești inspiraționale și decizii care au schimbat vieți. Află mai multe și rezervă-ți locul acum!" />
+            <meta name="keywords" content="TEDx, TEDxAvramIancu, TEDx Cluj, eveniment Cluj, inspirație, dezvoltare personală" />
+            <meta name="author" content="TEDxAvram Iancu Street" />
+            <meta name="robots" content="index, follow" />
+            <meta httpEquiv="content-language" content="ro" />
+
+            {/* Open Graph */}
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://tedxavramiancustreet.ro" />
+            <meta property="og:title" content="TEDxAvram Iancu Street - Life Changing Decisions" />
+            <meta property="og:description" content="Descoperă povești inspiraționale la TEDxAvram Iancu Street din Cluj-Napoca. Rezervă-ți locul acum!" />
+            <meta property="og:image" content="https://tedxavramiancustreet.ro/image/og-image.jpg" />
+
+            {/* Twitter Card */}
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:url" content="https://tedxavramiancustreet.ro" />
+            <meta property="twitter:title" content="TEDxAvram Iancu Street - Life Changing Decisions" />
+            <meta property="twitter:description" content="Evenimentul TEDxAvram Iancu Street aduce inspirație și schimbare. Rezervă-ți locul!" />
+            <meta property="twitter:image" content="https://tedxavramiancustreet.ro/image/og-image.jpg" />
+
+            {/* Canonical URL */}
+            <link rel="canonical" href="https://tedxavramiancustreet.ro" />
+
             <link
                 rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
