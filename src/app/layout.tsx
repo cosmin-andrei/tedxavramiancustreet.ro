@@ -1,8 +1,8 @@
 import "./globals.css";
-import type {Metadata} from "next";
-import {Roboto} from "next/font/google";
-import {Layout} from "@/components";
-import React, {Suspense} from "react";
+import type { Metadata } from "next";
+import { Roboto } from "next/font/google";
+import { Layout } from "@/components";
+import React, { Suspense } from "react";
 import Head from "next/head";
 import Script from "next/script";
 
@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-    title: "TEDxAvram Iancu Street - Life Chaning Decisions",
+    title: "TEDxAvram Iancu Street - Life Changing Decisions",
     description:
         "TEDxAvram Iancu Street este locul unde inspirația și inovația se întâlnesc pentru a schimba lumea. Descoperă poveștile care au schimbat vieți și fă parte dintr-o comunitate de oameni care își doresc să facă o diferență.",
 };
@@ -26,8 +26,9 @@ export default function RootLayout({
     return (
         <html lang="ro">
         <Head>
-            {/* Favicon */}
-            <link rel="shortcut icon" href="/favicon.png" type="image/png"/>
+            <meta charSet="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <link rel="icon" href="/favicon.png" type="image/png" />
 
             {/* Font Awesome */}
             <link
@@ -38,29 +39,29 @@ export default function RootLayout({
                 referrerPolicy="no-referrer"
             />
         </Head>
-
         <body className={roboto.className}>
+        {/* CookieYes Script */}
         <Script
             id="cookieyes"
             type="text/javascript"
             src="https://cdn-cookieyes.com/client_data/065537713e9f3f75679a8979/script.js"
             async
-        ></Script>
+        />
+        {/* Google Analytics */}
         <Script
             src="https://www.googletagmanager.com/gtag/js?id=G-72E9MLT5DC"
             strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
             {`
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-72E9MLT5DC');
-              `}
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-72E9MLT5DC');
+                    `}
         </Script>
         <Layout>
             {children}
-            {/*<FixedPlugin />*/}
         </Layout>
         </body>
         </html>

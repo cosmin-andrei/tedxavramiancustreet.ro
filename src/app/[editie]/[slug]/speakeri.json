@@ -92,9 +92,18 @@
     "prenume": "Ștefan",
     "nume_familie": "Boca",
     "calitate": "Creator Content",
-    "scurtBio": "",
+    "scurtBio": "Un adevărat explorator modern, Ștefan Boca este creator de conținut și storyteller pasionat, cunoscut pentru aventurile sale autentice și captivante documentate pe YouTube. Prin videoclipurile sale, urmărite de sute de mii de oameni, Ștefan inspiră publicul să își depășească limitele, să descopere frumusețile lumii și să îmbrățișeze provocările necunoscutului.\n\nCu o abordare autentică, Ștefan, combină curiozitatea pentru lumea înconjurătoare cu lecții valoroase despre reziliență, adaptabilitate și dezvoltare personală. Experiențele sale, de la explorarea unor locuri izolate și întâlniri cu oameni fascinanți, până la provocări de supraviețuire în sălbăticie, sunt o sursă de inspirație pentru oricine dorește să-și urmeze pasiunea și să trăiască viața la maximum.\n",
     "calePoza": "/image/editia2025/speakeri/stefanboca.png",
     "anul": "2025",
     "slug": "stefan-boca"
+  },
+  {
+    "prenume": "George",
+    "nume_familie": "Mesaroș",
+    "calitate": "Comediant",
+    "scurtBio": "",
+    "calePoza": "/image/editia2025/speakeri/georgemesaros.png",
+    "anul": "2025",
+    "slug": "george-mesaros"
   }
 ]

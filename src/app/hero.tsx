@@ -7,17 +7,23 @@ import Image from "next/image";
 const speakers = [
     {
         id: 1,
+        name: "George Mesaroș",
+        image: "/image/editia2025/speakeri/georgemesaros.png",
+        link: "/2025/george-mesaros",
+    },
+    {
+        id: 2,
         name: "Ștefan Boca",
         image: "/image/editia2025/speakeri/stefanboca.png",
         link: "/2025/stefan-boca",
     },
     {
-        id: 2,
+        id: 3,
         name: "Raly Țonea",
         image: "/image/editia2025/team/ralytonea.png",
         link: "/2025/raly-tonea",
     },
-    // Adaugă alți speakeri aici cu un id unic
+
 ];
 
 function Hero() {
