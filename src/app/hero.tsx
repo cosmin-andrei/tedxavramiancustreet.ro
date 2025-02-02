@@ -29,24 +29,20 @@ const speakers = [
 function Hero() {
     return (
         <>
-            {/* Hero Section */}
-            <section className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/image/event.jpg')" }}>
-                {/* Overlay */}
+            <section className="relative min-h-screen w-full bg-cover bg-center bg-no-repeat"
+                     style={{backgroundImage: "url('/image/event.jpg')"}}>
                 <div className="absolute inset-0 bg-black opacity-70"></div>
-
-                {/* Content */}
-                <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-8 text-center">
-                    {/* Titlu */}
+                <div
+                    className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-8 pt-32 text-center">
                     <Typography
                         variant="h1"
                         color="white"
-                        className="mb-4 text-4xl font-extrabold sm:text-5xl lg:text-6xl"
+                        className="mb-4 text-4xl font-extrabold sm:text-5xl lg:text-5xl"
                         as="h1"
                     >
                         Life Changing Decisions
                     </Typography>
 
-                    {/* Subtitlu */}
                     <Typography
                         variant="h4"
                         color="white"
@@ -56,19 +52,17 @@ function Hero() {
                         24 mai 2025 @ Cluj-Napoca
                     </Typography>
 
-                    {/* Buton */}
                     <Button
                         placeholder="Cumpără bilet"
-                        onClick={() => window.location.href = "/ticket"}
+                        onClick={() => window.location.href = "/participa"}
                         variant="gradient"
                         color="white"
-                        className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-2xl transition-shadow duration-300 mb-12"
-                        onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}                    >
+                        className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-2xl transition-shadow duration-300 mb-5"
+                        onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
                         Cumpără bilet
                     </Button>
 
-                    {/* Speakers */}
-                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 mt-8">
                         {speakers.map((speaker, index) => (
                             <div key={index} className="text-center">
                                 <a href={speaker.link} aria-label={`Vizitează profilul lui ${speaker.name}`}>
@@ -97,7 +91,6 @@ function Hero() {
     );
 }
 
-// Componenta Countdown
 function Countdown() {
     let eventDate: Date;
     eventDate = new Date("2025-05-24T13:00:00"); // Data și ora evenimentului
