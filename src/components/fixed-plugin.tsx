@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 
 export function FixedPlugin() {
     return (
-        <a href="https://www.material-tailwind.com" target="_blank">
+        <a href="https://onedu.ro" target="_blank">
             <Button
                 color="white"
                 size="sm"
@@ -14,13 +14,13 @@ export function FixedPlugin() {
                 onPointerLeaveCapture={() => {}}
             >
                 <Image
-                    width={128}
-                    height={128}
-                    className="w-5 h-5"
+                    width={520}
+                    height={50}
+                    className="w-12 h-8"
                     alt="Material Tailwind"
-                    src="https://www.material-tailwind.com/favicon.png"
+                    src="https://assets.onedu.ro/logos/logo.webp"
                 />{" "}
-                Made With Material Tailwind
+                Made by
             </Button>
         </a>
     );
