@@ -7,18 +7,24 @@ import Image from "next/image";
 const speakers = [
     {
         id: 1,
+        name: "Lia Perjovschi",
+        image: "/image/editia2025/speakeri/liaperjovschi.jpg",
+        link: "/2025/lia-perjovschi",
+    },
+    {
+        id: 2,
         name: "George Mesaroș",
         image: "/image/editia2025/speakeri/georgemesaros.png",
         link: "/2025/george-mesaros",
     },
     {
-        id: 2,
+        id: 3,
         name: "Ștefan Boca",
         image: "/image/editia2025/speakeri/stefanboca.png",
         link: "/2025/stefan-boca",
     },
     {
-        id: 3,
+        id: 4,
         name: "Raly Țonea",
         image: "/image/editia2025/team/ralytonea.png",
         link: "/2025/raly-tonea",

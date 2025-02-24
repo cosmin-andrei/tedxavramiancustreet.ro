@@ -101,9 +101,45 @@
     "prenume": "George",
     "nume_familie": "Mesaroș",
     "calitate": "Comediant",
-    "scurtBio": "",
+    "scurtBio": "George Mesaros este un comediant român autentic și charismatic, cunoscut pentru umorul său spontan, poveștile savuroase și abordarea sinceră în spectacolele de stand-up comedy. Originar din Turda, George a devenit o figură populară pe scena comediei din România prin participarea sa la emisiunea „Stand-Up Revolution,” unde a impresionat prin naturalețea și energia sa unică.  Pe lângă activitatea de stand-up, este gazda emisiunii „Statistic Vorbind,” unde combină umorul inteligent cu dezbateri captivante. George are talentul de a transforma subiectele banale în discuții captivante, presărate cu observații pline umor. Cunoscut pentru autenticitatea și capacitatea de a relaționa cu publicul, George Mesaros continuă să fie o voce distinctă în peisajul comediei românești, inspirând prin povești reale, spontaneitate și o perspectivă umoristică asupra vieții.\n",
     "calePoza": "/image/editia2025/speakeri/georgemesaros.png",
     "anul": "2025",
     "slug": "george-mesaros"
+  },
+  {
+    "prenume": "Diana",
+    "nume_familie": "Bulimar",
+    "calitate": "Gimnastă",
+    "scurtBio": "",
+    "calePoza": "/image/editia2025/speakeri/dianabulimar.jpeg",
+    "anul": "2025",
+    "slug": "diana-bulimar"
+  },
+  {
+    "prenume": "Richard",
+    "nume_familie": "Abou Zaki",
+    "calitate": "Chef",
+    "scurtBio": "",
+    "calePoza": "/image/editia2025/speakeri/richardzaki.jpg",
+    "anul": "2025",
+    "slug": "richard-abou-zaki"
+  },
+  {
+    "prenume": "Dan",
+    "nume_familie": "Perjovschi",
+    "calitate": "Artist",
+    "scurtBio": "",
+    "calePoza": "/image/editia2025/speakeri/danperjovschi.jpg",
+    "anul": "2025",
+    "slug": "dan-perjovschi"
+  },
+  {
+    "prenume": "Lia",
+    "nume_familie": "Perjovschi",
+    "calitate": "Artist",
+    "scurtBio": "",
+    "calePoza": "/image/editia2025/speakeri/liaperjovschi.jpg",
+    "anul": "2025",
+    "slug": "lia-perjovschi"
   }
 ]
