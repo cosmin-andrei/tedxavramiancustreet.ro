@@ -56,11 +56,6 @@ export function DespreComponent() {
                         {[
                             {name: 'Raly Țonea', role: 'Curator', image: '/image/editia2025/team/ralytonea.png'},
                             {
-                                name: 'Claudiu Chiorean',
-                                role: 'Asistent curator',
-                                image: '/image/editia2025/team/claudiu.png'
-                            },
-                            {
                                 name: 'Bianca Țuligă',
                                 role: 'Manager comunicare',
                                 image: '/image/editia2025/team/bianca.png'
