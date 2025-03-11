@@ -32,16 +32,10 @@ export function DespreComponent() {
                         <div className={styles.aboutTextWrapper}>
                             <h2 className={styles.aboutTitle}>Povestea noastră</h2>
                             <p className={styles.aboutText}>
-                                Primele încercări pentru organizarea unui eveniment dedicat schimbului de idei au
-                                început
-                                la Galați în anul 2019, la inițiativa fondatorului Comunității ONedu România, Cosmin.
-                                Din
-                                păcate, pandemia a făcut ca organizarea unui TEDx pentru educație să fie imposibil,
-                                astfel
-                                că în 2024, un vis a fost împlinit, visul de a aduce oameni cu idei frumoase și
-                                inspiraționale într-un singur loc, pentru a le împărtăși cu ceilalți. Așa a luat naștere
-                                TEDxAvram Iancu Street, un eveniment organizat de tineri pentru comunitatea locală și
-                                națională.
+                                TEDxAvram Iancu Street s-a născut din dorința de a aduce împreună oameni pasionați de
+                                idei care pot schimba lumea. Credem în puterea poveștilor autentice, a curajului de a
+                                alege alt drum și a inspirației care transformă comunități. La fiecare ediție, creăm un
+                                spațiu unde ideile prind viață, conexiunile se formează și perspectivele se lărgesc.
                             </p>
                         </div>
                     </div>

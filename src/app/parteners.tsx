@@ -15,14 +15,14 @@ import {Typography} from "@material-tailwind/react";
 //     "m5.webp",
 //     "cinema.webp",
 //     "primarie.webp",
-//     "ellproject.png"
+//     "ellproject.png",
+//     "cinema.webp",
+//     "publica.webp"
 // ];
 
 const SPONSORS = [
     "onedu.png",
-    "publica.webp",
     "m5.webp",
-    "cinema.webp",
     "primarie.webp",
 ];
 
