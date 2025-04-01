@@ -13,18 +13,30 @@ const speakers = [
     },
     {
         id: 2,
+        name: "Diana Bulimar",
+        image: "/image/editia2025/speakeri/dianabulimar.jpg",
+        link: "/2025/diana-bulimar",
+    },
+    {
+        id: 2,
+        name: "Dan Perjovschi",
+        image: "/image/editia2025/speakeri/danperjovschi.jpg",
+        link: "/2025/dan-perjovschi",
+    },
+    {
+        id: 3,
         name: "Lia Perjovschi",
         image: "/image/editia2025/speakeri/liaperjovschi.jpg",
         link: "/2025/lia-perjovschi",
     },
     {
-        id: 3,
+        id: 4,
         name: "George Mesaroș",
         image: "/image/editia2025/speakeri/georgemesaros.png",
         link: "/2025/george-mesaros",
     },
     {
-        id: 4,
+        id: 5,
         name: "Ștefan Boca",
         image: "/image/editia2025/speakeri/stefanboca.png",
         link: "/2025/stefan-boca",
@@ -32,7 +44,7 @@ const speakers = [
     {
         id: 5,
         name: "Raly Țonea",
-        image: "/image/editia2025/team/ralytonea.png",
+        image: "/image/editia2025/team/ralytonea.jpg",
         link: "/2025/raly-tonea",
     },
 

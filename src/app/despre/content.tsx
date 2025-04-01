@@ -48,7 +48,7 @@ export function DespreComponent() {
                     <h2 className={styles.sectionTitle}>Echipa #TEDxAvram Iancu Street</h2>
                     <div className={styles.teamWrapper}>
                         {[
-                            {name: 'Raly Țonea', role: 'Curator', image: '/image/editia2025/team/ralytonea.png'},
+                            {name: 'Raly Țonea', role: 'Curator', image: '/image/editia2025/team/ralytonea.jpg'},
                             {
                                 name: 'Bianca Țuligă',
                                 role: 'Manager comunicare',
@@ -57,18 +57,27 @@ export function DespreComponent() {
                             {
                                 name: 'Ștefan Poenaru',
                                 role: 'Asistent logistică',
-                                image: '/image/editia2025/team/stefan.png'
+                                image: '/image/editia2025/team/stefan.jpg'
                             },
                             {
                                 name: 'Darius Bordeanu',
                                 role: 'Asistent Manager',
-                                image: '/image/editia2025/team/dariusb.png'
+                                image: '/image/editia2025/team/dariusb.jpg'
                             },
-                            {name: 'Florin Baciu', role: 'HR Manager', image: '/image/editia2025/team/florinbaciu.png'},
+                            {
+                                name: 'Florin Baciu',
+                                role: 'HR Manager',
+                                image: '/image/editia2025/team/florinbaciu.jpg'
+                            },
                             {
                                 name: 'Darius Constantin',
                                 role: 'Asistent comunicare',
-                                image: '/image/editia2025/team/dariusconstantin.webp'
+                                image: '/image/editia2025/team/dariusconstantin.jpg'
+                            },
+                            {
+                                name: 'Ioana Otilia',
+                                role: 'Copywriter',
+                                image: '/image/editia2025/team/ioanao.jpg'
                             },
                             {
                                 name: 'Vanessa Mathe',
@@ -79,8 +88,7 @@ export function DespreComponent() {
                                 name: 'Ilia Streche',
                                 role: 'Asistent comunicare',
                                 image: '/image/editia2025/team/ilia.jpg'
-                            },
-                            {name: 'Ioana Otilia', role: 'Copywriter', image: '/image/editia2025/team/ioana.jpg'},
+                            }
                         ].map((member, index) => (
                             <div key={index} className={styles.teamMember}>
                                 <Image
