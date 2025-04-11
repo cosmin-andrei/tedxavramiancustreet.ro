@@ -18,31 +18,37 @@ const speakers = [
         link: "/2025/diana-bulimar",
     },
     {
-        id: 2,
+        id: 3,
+        name: "Politică la minut",
+        image: "/image/editia2025/speakeri/politicalaminut.jpg",
+        link: "/2025/politicalaminut",
+    },
+    {
+        id: 4,
         name: "Dan Perjovschi",
         image: "/image/editia2025/speakeri/danperjovschi.jpg",
         link: "/2025/dan-perjovschi",
     },
     {
-        id: 3,
+        id: 5,
         name: "Lia Perjovschi",
         image: "/image/editia2025/speakeri/liaperjovschi.jpg",
         link: "/2025/lia-perjovschi",
     },
     {
-        id: 4,
+        id: 6,
         name: "George Mesaroș",
         image: "/image/editia2025/speakeri/georgemesaros.png",
         link: "/2025/george-mesaros",
     },
     {
-        id: 5,
+        id: 7,
         name: "Ștefan Boca",
         image: "/image/editia2025/speakeri/stefanboca.png",
         link: "/2025/stefan-boca",
     },
     {
-        id: 5,
+        id: 8,
         name: "Raly Țonea",
         image: "/image/editia2025/team/ralytonea.jpg",
         link: "/2025/raly-tonea",
@@ -86,7 +92,7 @@ function Hero() {
                         Cumpără bilet
                     </Button>
 
-                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 mt-8">
+                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 mt-8">
                         {speakers.map((speaker, index) => (
                             <div key={index} className="text-center">
                                 <a href={speaker.link} aria-label={`Vizitează profilul lui ${speaker.name}`}>

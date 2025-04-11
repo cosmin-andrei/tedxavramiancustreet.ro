@@ -110,7 +110,7 @@
     "prenume": "Diana",
     "nume_familie": "Bulimar",
     "calitate": "Gimnastă",
-    "scurtBio": "",
+    "scurtBio": "Cu un palmares impresionant, inclusiv medalii la Jocurile Olimpice, Campionatele Europene și Mondiale, Diana ne va împărtăși povestea din spatele performanței: despre ambiție, sacrificiu și lecțiile pe care sportul le oferă dincolo de competiție.",
     "calePoza": "/image/editia2025/speakeri/dianabulimar.jpg",
     "anul": "2025",
     "slug": "diana-bulimar"
@@ -141,5 +141,14 @@
     "calePoza": "/image/editia2025/speakeri/liaperjovschi.jpg",
     "anul": "2025",
     "slug": "lia-perjovschi"
+  },
+  {
+    "prenume": "Politică",
+    "nume_familie": "la Minut",
+    "calitate": "Vlad & Răzvan",
+    "scurtBio": "Într-un context în care tot mai mulți tineri se simt dezamăgiți de sistem, Vlad și Răzvan au luat o decizie care le-a schimbat parcursul: să transforme frustrarea în implicare și lipsa de informare într-un proiect de educație civică urmărit de zeci de mii de oameni.\nCu studii în științe politice la King’s College London și mastere în politici publice la LSE și UCL, cei doi construiesc punți între generații, instituții și idei.",
+    "calePoza": "/image/editia2025/speakeri/politicalaminut.jpg",
+    "anul": "2025",
+    "slug": "politicalaminut"
   }
 ]

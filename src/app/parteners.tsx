@@ -23,9 +23,12 @@ import {Typography} from "@material-tailwind/react";
 const SPONSORS = [
     "onedu.png",
     "aqua.svg",
+    "avon.png",
+    "epg.png",
+    "cartofiserie.png",
+    "bdv.png",
     "jidvei.png",
-    "m5.webp",
-    "primarie.webp"
+    "m5.webp"
 ];
 
 export function Parteners() {
