@@ -14,25 +14,25 @@ const speakers = [
     {
         id: 2,
         name: "Diana Bulimar",
-        image: "/image/editia2025/speakeri/dianabulimar.jpg",
+        image: "/image/editia2025/speakeri/dianabulimar.png",
         link: "/2025/diana-bulimar",
     },
     {
         id: 3,
-        name: "Politică la minut",
-        image: "/image/editia2025/speakeri/politicalaminut.jpg",
+        name: "Politică la Minut",
+        image: "/image/editia2025/speakeri/politicalaminut.png",
         link: "/2025/politicalaminut",
     },
     {
         id: 4,
         name: "Dan Perjovschi",
-        image: "/image/editia2025/speakeri/danperjovschi.jpg",
+        image: "/image/editia2025/speakeri/danperjovschi.png",
         link: "/2025/dan-perjovschi",
     },
     {
         id: 5,
         name: "Lia Perjovschi",
-        image: "/image/editia2025/speakeri/liaperjovschi.jpg",
+        image: "/image/editia2025/speakeri/liaperjovschi.png",
         link: "/2025/lia-perjovschi",
     },
     {
@@ -50,7 +50,7 @@ const speakers = [
     {
         id: 8,
         name: "Raly Țonea",
-        image: "/image/editia2025/team/ralytonea.jpg",
+        image: "/image/editia2025/team/ralytonea.png",
         link: "/2025/raly-tonea",
     },
 
