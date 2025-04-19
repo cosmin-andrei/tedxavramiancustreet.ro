@@ -8,7 +8,7 @@ import Footer from "@/components/footer";
 const tickets = [
     {
         type: "Standard",
-        price: "€15",
+        price: "€17",
         oldPrice: "€50",
         benefits: [
             "Acces la conferință",
@@ -20,7 +20,7 @@ const tickets = [
     },
     {
         type: "Cuplu",
-        price: "€28",
+        price: "€32",
         oldPrice: "€98",
         benefits: [
             "Acces la conferință",
@@ -31,8 +31,8 @@ const tickets = [
         badge: "OFERTĂ DE CUPLU",
     },
     {
-        type: "VIP",
-        price: "€30",
+        type: "Ambasador",
+        price: "€40",
         oldPrice: "€100",
         benefits: [
             "Acces la conferință",
