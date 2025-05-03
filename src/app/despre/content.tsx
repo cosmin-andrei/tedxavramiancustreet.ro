@@ -60,11 +60,6 @@ export function DespreComponent() {
                                 image: '/image/editia2025/team/stefan.jpg'
                             },
                             {
-                                name: 'Darius Bordeanu',
-                                role: 'Asistent Manager',
-                                image: '/image/editia2025/team/dariusb.jpg'
-                            },
-                            {
                                 name: 'Florin Baciu',
                                 role: 'HR Manager',
                                 image: '/image/editia2025/team/florinbaciu.jpg'

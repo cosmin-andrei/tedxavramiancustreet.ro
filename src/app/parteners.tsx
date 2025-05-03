@@ -4,29 +4,16 @@ import React from "react";
 import Image from "next/image";
 import {Typography} from "@material-tailwind/react";
 
-// const SPONSORS = [
-//     "onedu.png",
-//     "epg.png",
-//     "aqua.svg",
-//     "jidvei.png",
-//     "avon.png",
-//     "cartofiserie.png",
-//     "publica.webp",
-//     "m5.webp",
-//     "cinema.webp",
-//     "primarie.webp",
-//     "ellproject.png",
-//     "cinema.webp",
-//     "publica.webp"
-// ];
 
 const SPONSORS = [
     "onedu.png",
     "aqua.svg",
     "avon.png",
     "epg.png",
-    "cartofiserie.png",
+    "vibrehotel.png",
     "bdv.png",
+    "centrokinetic.png",
+    "cartofiserie.png",
     "jidvei.png",
     "m5.webp"
 ];
@@ -51,7 +38,7 @@ export function Parteners() {
                             <Image
                                 width={156}
                                 height={156}
-                                src={`/image/editia2024/parteners/logo_${logo}`}
+                                src={`/logos/parteners/logo_${logo}`}
                                 alt={logo}
                                 className="object-contain"
                             />

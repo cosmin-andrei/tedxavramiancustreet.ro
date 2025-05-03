@@ -8,11 +8,11 @@ import Footer from "@/components/footer";
 const tickets = [
     {
         type: "Standard",
-        price: "€17",
+        price: "€20",
         oldPrice: "€50",
         benefits: [
             "Acces la conferință",
-            "Album foto de la eveniment",
+            "Album foto de la eveniment (digital)",
             "Acces la activări ale partenerilor",
         ],
         buttonText: "Ia bilet acum",
@@ -20,11 +20,11 @@ const tickets = [
     },
     {
         type: "Cuplu",
-        price: "€32",
+        price: "€38",
         oldPrice: "€98",
         benefits: [
             "Acces la conferință",
-            "Album foto de la eveniment",
+            "Album foto de la eveniment (digital)",
             "Acces la activări ale partenerilor",
         ],
         buttonText: "Ia bilet acum",
@@ -32,11 +32,11 @@ const tickets = [
     },
     {
         type: "Ambasador",
-        price: "€40",
+        price: "€45",
         oldPrice: "€100",
         benefits: [
             "Acces la conferință",
-            "Album foto de la eveniment",
+            "Album foto de la eveniment (digital)",
             "Acces la activări ale partenerilor",
             "Loc în primele rânduri",
             "Acces la cina cu speakerii",
