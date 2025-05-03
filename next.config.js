@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   images: {
     remotePatterns: [
       {
@@ -8,13 +9,10 @@ const nextConfig = {
       },
     ],
   },
-};
-
-module.exports = {
   experimental: {
     workerThreads: false,
     cpus: 1,
-  },
+  }
 };
 
 module.exports = nextConfig;

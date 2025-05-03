@@ -7,8 +7,9 @@
   "homepage": "https://tedxavramiancustreet.ro",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "NODE_ENV=production next start"
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=256 next build",
+    "start": "cross-env NODE_ENV=production NODE_OPTIONS=--max-old-space-size=256 next start",
+    "export": "next export"
   },
   "dependencies": {
     "@heroicons/react": "2.0.18",
