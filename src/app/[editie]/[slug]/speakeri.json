@@ -150,5 +150,14 @@
     "calePoza": "/image/editia2025/speakeri/politicalaminut.png",
     "anul": "2025",
     "slug": "politicalaminut"
+  },
+  {
+    "prenume": "Marcus",
+    "nume_familie": "Mureșan",
+    "calitate": "Live Performance",
+    "scurtBio": "Marcus este un artist aflat la început de drum, cu un timbru sensibil și o conexiune profundă cu lumea din jurul său. Muzica sa este sinceră și plină de trăire, inspirată din momentele care îl formează și din emoțiile care persistă dincolo de aparențe. Cu o voce caldă și versuri introspective, Marcus compune piese care transmit intimitate și autenticitate, vorbind direct sufletului ascultătorului. Sound-ul său reflectă o combinație subtilă între vulnerabilitate și forță interioară, conturând portretul unui povestitor al adevărurilor delicate, dar profunde.",
+    "calePoza": "/image/editia2025/speakeri/marcusmuresan.png",
+    "anul": "2025",
+    "slug": "marcus-muresan"
   }
 ]

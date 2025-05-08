@@ -26,7 +26,7 @@ export function EventContent() {
                 onPointerLeaveCapture={() => {
                 }}
             >
-                Biletele sunt disponibile în număr limitat la preț redus cu 70%.
+                Biletele sunt disponibile în număr limitat la preț redus cu 50%.
             </Typography>
             <div className="flex w-full md:w-fit gap-3 mt-2 flex-col md:flex-row">
                 <Button

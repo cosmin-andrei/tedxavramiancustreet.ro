@@ -25,22 +25,23 @@ const speakers = [
     },
     {
         id: 4,
+        name: "George Mesaroș",
+        image: "/image/editia2025/speakeri/georgemesaros.png",
+        link: "/2025/george-mesaros",
+    },
+    {
+        id: 5,
         name: "Dan Perjovschi",
         image: "/image/editia2025/speakeri/danperjovschi.png",
         link: "/2025/dan-perjovschi",
     },
     {
-        id: 5,
+        id: 6,
         name: "Lia Perjovschi",
         image: "/image/editia2025/speakeri/liaperjovschi.png",
         link: "/2025/lia-perjovschi",
     },
-    {
-        id: 6,
-        name: "George Mesaroș",
-        image: "/image/editia2025/speakeri/georgemesaros.png",
-        link: "/2025/george-mesaros",
-    },
+
     {
         id: 7,
         name: "Ștefan Boca",
@@ -49,10 +50,10 @@ const speakers = [
     },
     {
         id: 8,
-        name: "Raly Țonea",
-        image: "/image/editia2025/team/ralytonea.png",
-        link: "/2025/raly-tonea",
-    },
+        name: "Marcus Mureșan",
+        image: "/image/editia2025/speakeri/marcusmuresan.png",
+        link: "/2025/marcus-muresan",
+    }
 
 ];
 
@@ -79,18 +80,32 @@ function Hero() {
                         className="mb-8 text-lg sm:text-xl lg:text-2xl"
                         as="h4"
                     >
-                        24 mai 2025 @ Cluj-Napoca
+                        24 mai 2025 @ Cluj Arena
                     </Typography>
 
-                    <Button
-                        placeholder="Cumpără bilet"
-                        onClick={() => window.location.href = "/participa"}
-                        variant="gradient"
-                        color="white"
-                        className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-2xl transition-shadow duration-300 mb-5"
-                        onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}>
-                        Cumpără bilet
-                    </Button>
+                    <div className="flex flex-col sm:flex-row gap-4 mb-5">
+                        <Button
+                            onClick={() => window.location.href = "/participa"}
+                            variant="gradient"
+                            color="white"
+                            className="px-6 py-3 text-gray-900 shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                            placeholder={undefined} onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}                        >
+                            Cumpără bilet
+                        </Button>
+
+                        <Button
+                            onClick={() => window.open("https://tickets.tedxavramiancustreet.ro", "_blank")}
+                            variant="filled"
+                            color="red"
+                            className="px-6 py-3 text-white shadow-md hover:shadow-lg transition-shadow duration-300"
+                            placeholder={undefined} onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}>
+                            Cumpără cu Revolut
+                        </Button>
+
+                    </div>
+
 
                     <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 mt-8">
                         {speakers.map((speaker, index) => (
