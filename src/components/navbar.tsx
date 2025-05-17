@@ -14,7 +14,7 @@ import {
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
-import {HeartIcon} from "@heroicons/react/20/solid";
+import {HeartIcon, NewspaperIcon, RocketLaunchIcon} from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 interface NavItemProps {
@@ -42,15 +42,20 @@ function NavItem({ children, href }: NavItemProps) {
 }
 
 const NAV_MENU = [
-  // {
-  //   name: "Speakeri",
-  //   icon: UserCircleIcon,
-  //   href: "../app/speakeri.tsx",
-  // },
   {
     name: "Corporate",
     icon: BuildingOfficeIcon,
     href: "corporate",
+  },
+  {
+    name: "StartUp Town",
+    icon: RocketLaunchIcon,
+    href: "https://town.tedxavramiancustreet.ro",
+  },
+  {
+    name: "Acreditare presă",
+    icon: NewspaperIcon,
+    href: "https://docs.google.com/forms/d/e/1FAIpQLSc4sBv9ASdWJsfkIHHXhVGHVk3uD1mfYdEC0UCbN_TZXthL5w/viewform",
   },
   // {
   //   name: "Merch",

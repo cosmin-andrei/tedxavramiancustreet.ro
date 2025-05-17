@@ -92,8 +92,9 @@ function Hero() {
                         className="mb-8 text-lg sm:text-xl lg:text-2xl"
                         as="h4"
                     >
-                        24 mai 2025 @ Cluj Arena
+                        24 mai 2025 · ora 12:00 · Cluj Arena
                     </Typography>
+
 
                     <div className="flex flex-col sm:flex-row gap-4 mb-5">
                         <Button
