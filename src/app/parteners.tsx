@@ -2,13 +2,13 @@
 
 import React from "react";
 import Image from "next/image";
-import { Typography } from "@material-tailwind/react";
+import {Typography} from "@material-tailwind/react";
 
 const SPONSORS_BY_CATEGORY: Record<string, string[]> = {
     "Main Partner": ["onedu.png"],
-    "Food & Drinks Partners": ["cartofiserie.png", "aqua.svg", "jidvei.png"],
+    "Food & Drinks Partners": ["lovegan.jpeg", "aqua.svg", "jidvei.png", "cartofiserie.png"],
     "Hospitality & Production Partners": [
-        "vibrehotel.png", "epg.png", "avon.png", "centrokinetic.png", "m5.webp"
+        "vibrehotel.png", "avon.png", "centrokinetic.png", "wwp.png", "epg.png", "m5.webp", "vrzone.svg"
     ],
     "Mobility Partner": ["bdv.png"],
     "Media Partners": ["clujinfo.png", "media9.png", "ilikecluj.png"]
@@ -32,7 +32,8 @@ export function Parteners() {
                         Main Partner
                     </Typography>
                     <div className="flex justify-center">
-                        <div className="flex items-center justify-center bg-white border border-gray-300 rounded-lg aspect-square w-36 h-36 p-2">
+                        <div
+                            className="flex items-center justify-center bg-white border border-gray-300 rounded-lg aspect-square w-36 h-36 p-2">
                             <Image
                                 width={120}
                                 height={120}

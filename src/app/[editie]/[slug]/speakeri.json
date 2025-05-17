@@ -153,11 +153,29 @@
   },
   {
     "prenume": "Marcus",
-    "nume_familie": "Mureșan",
+    "nume_familie": "",
     "calitate": "Live Performance",
     "scurtBio": "Marcus este un artist aflat la început de drum, cu un timbru sensibil și o conexiune profundă cu lumea din jurul său. Muzica sa este sinceră și plină de trăire, inspirată din momentele care îl formează și din emoțiile care persistă dincolo de aparențe. Cu o voce caldă și versuri introspective, Marcus compune piese care transmit intimitate și autenticitate, vorbind direct sufletului ascultătorului. Sound-ul său reflectă o combinație subtilă între vulnerabilitate și forță interioară, conturând portretul unui povestitor al adevărurilor delicate, dar profunde.",
     "calePoza": "/image/editia2025/speakeri/marcusmuresan.png",
     "anul": "2025",
     "slug": "marcus-muresan"
+  },
+  {
+    "prenume": "Diana",
+    "nume_familie": "Măluțan",
+    "calitate": "Co-Host",
+    "scurtBio": "Diana Lavinia Măluțan este actrita, comedianta de stand-up si absolventa a facultatii de drept. Imbina arta cu ratiunea si crede in puterea deciziilor curajoase care iti pot schimba viata. A urmat cursuri de actorie in Romania si Marea Britanie, joaca in proiecte de film si face parte dintr-un grup local de stand-up. Prin tot ce face isi propune sa spuna povesti care inspira autenticitate si transformare.",
+    "calePoza": "/image/editia2025/speakeri/dianamalutan.png",
+    "anul": "2025",
+    "slug": "diana-malutan"
+  },
+  {
+    "prenume": "Mircea",
+    "nume_familie": "Rotariu",
+    "calitate": "Co-Host",
+    "scurtBio": "Absolvent de arte și comediant clujean, Mircea Rotariu activează încă din perioada pandemiei în domeniul marketingul. Implicat în organizarea diverselor evenimente locale, acesta îmbină pasiunea pentru comedie cu muzica, activând în zona de social media.",
+    "calePoza": "/image/editia2025/speakeri/mircearotariu.png",
+    "anul": "2025",
+    "slug": "mircea-rotariu"
   }
 ]

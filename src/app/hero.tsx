@@ -50,9 +50,21 @@ const speakers = [
     },
     {
         id: 8,
-        name: "Marcus Mureșan",
+        name: "Marcus",
         image: "/image/editia2025/speakeri/marcusmuresan.png",
         link: "/2025/marcus-muresan",
+    },
+    {
+        id: 9,
+        name: "Diana Măluțan",
+        image: "/image/editia2025/speakeri/dianamalutan.png",
+        link: "/2025/diana-malutan",
+    },
+    {
+        id: 10,
+        name: "Mircea Rotariu",
+        image: "/image/editia2025/speakeri/mircearotariu.png",
+        link: "/2025/mircea-rotariu",
     }
 
 ];
@@ -107,7 +119,7 @@ function Hero() {
                     </div>
 
 
-                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4 mt-8">
+                    <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5 mt-8">
                         {speakers.map((speaker, index) => (
                             <div key={index} className="text-center">
                                 <a href={speaker.link} aria-label={`Vizitează profilul lui ${speaker.name}`}>
