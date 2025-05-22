@@ -47,16 +47,6 @@ const NAV_MENU = [
     icon: BuildingOfficeIcon,
     href: "corporate",
   },
-  {
-    name: "StartUp Town",
-    icon: RocketLaunchIcon,
-    href: "https://town.tedxavramiancustreet.ro",
-  },
-  {
-    name: "Acreditare presă",
-    icon: NewspaperIcon,
-    href: "https://docs.google.com/forms/d/e/1FAIpQLSc4sBv9ASdWJsfkIHHXhVGHVk3uD1mfYdEC0UCbN_TZXthL5w/viewform",
-  },
   // {
   //   name: "Merch",
   //   icon: ShoppingBagIcon,

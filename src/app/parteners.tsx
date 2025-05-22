@@ -8,7 +8,7 @@ const SPONSORS_BY_CATEGORY: Record<string, string[]> = {
     "Main Partner": ["onedu.png"],
     "Food & Drinks Partners": ["lovegan.jpeg", "aqua.svg", "jidvei.png", "cartofiserie.png"],
     "Hospitality & Production Partners": [
-        "vibrehotel.png", "avon.png", "centrokinetic.png", "wwp.png", "epg.png", "m5.webp", "vrzone.svg"
+        "vibrehotel.png", "m5.webp", "centrokinetic.png", "wwp.png", "magnolia.jpg", "epg.png", "osteopharm.png", "avon.png", "vrzone.svg"
     ],
     "Mobility Partner": ["bdv.png"],
     "Media Partners": ["clujinfo.png", "media9.png", "ilikecluj.png"]
